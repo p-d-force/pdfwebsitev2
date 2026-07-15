@@ -305,6 +305,7 @@ class DataSubController
 
         // ── Charts ──
         $chartsHtml = '';
+        $chartsHtml .= '<div style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.25);border-radius:6px;padding:0.75rem 1rem;margin-bottom:1.5rem;font-size:0.85rem;color:var(--text-secondary);"><strong style="color:var(--warning);">Note:</strong> Discipline data is a single DESE snapshot replicated across all school years. Year-over-year comparison is not available. For trend analysis, use the <a href="/data/restraint" style="color:var(--accent-glow);">Restraint dataset</a>.</div>';
         $extraHtml = '';
 
         // 1. Stacked bar chart from discipline-breakdown API data
@@ -435,8 +436,6 @@ class DataSubController
         }
 
 
-        // Data caveat: discipline values are cloned across years
-        $extraHtml .= '<div style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.25);border-radius:6px;padding:0.75rem 1rem;margin-top:1rem;font-size:0.85rem;color:var(--text-secondary);"><strong style="color:var(--warning);">Note:</strong> Discipline metric values are from a single DESE annual snapshot and appear identical across all school years. Per-year breakdowns will become available when multi-year source data is imported. For year-over-year trend analysis, use the <a href="/data/restraint" style="color:var(--accent-glow);">Restraint dataset</a>.</div>';
         View::render('data/browser', [
             'csv_api_type' => 'discipline-breakdown',
             'page_title'      => 'Discipline Data Browser',
