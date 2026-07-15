@@ -68,6 +68,7 @@ return [
     '/prs/analytics'           => [PrsController::class, 'analytics'],
     '/prs/district/{code}'     => [PrsController::class, 'districtView'],
     '/prs/calendar'            => [PrsController::class, 'calendar'],
+    '/prs/flow'                => [PrsController::class, 'flow'],
     '/prs'                     => [PrsController::class, 'list'],
 
     '/prs/cross-ref'          => [PrsController::class, 'crossRef'],

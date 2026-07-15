@@ -79,6 +79,21 @@
             </div>
         <?php endif; ?>
 
+
+        <?php if (!empty($similarDistricts)): ?>
+        <div class="dashboard-panel" data-animate>
+            <h3>Similar Districts</h3>
+            <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.75rem;">Districts with comparable enrollment size</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0.75rem;">
+                <?php foreach ($similarDistricts as $sd): ?>
+                <a href="/districts/<?= h(strtolower($sd['org_code'])) ?>" style="text-decoration:none;background:var(--bg-elevated);border:1px solid var(--border);border-radius:8px;padding:0.75rem;display:block;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+                    <div style="font-weight:600;color:var(--text-primary);"><?= h($sd['org_name']) ?></div>
+                    <div style="font-size:0.8rem;color:var(--text-secondary);"><?= h($sd['town'] ?? '') ?> &middot; <?= h($sd['org_code']) ?></div>
+                </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <?php endif; ?>
         <?php if (empty($cases) && empty($restraintData) && empty($enrollmentData) && empty($spedData)): ?>
             <div class="empty-state"><h3>No data available</h3><p>District data is being imported. Check back soon for detailed analytics.</p></div>
         <?php endif; ?>

@@ -1937,4 +1937,26 @@ class PrsController
             'year'            => $year,
         ]);
     }
+
+    /** GET /prs/flow — status flow pipeline visualization */
+    public function flow(array $params = []): void
+    {
+        $statusData = Database::fetchAll(
+            "SELECT current_status, COUNT(*) as cnt FROM prs_cases
+             GROUP BY current_status ORDER BY FIELD(current_status,'filed','accepted','investigating','findings','closed','appealed')"
+        );
+        $resolutionData = Database::fetchAll(
+            "SELECT resolution_type, COUNT(*) as cnt FROM prs_cases
+             WHERE resolution_type IS NOT NULL GROUP BY resolution_type ORDER BY cnt DESC"
+        );
+        $total = (int)Database::fetchColumn("SELECT COUNT(*) FROM prs_cases");
+
+        View::render('prs/flow', [
+            'page_title'      => 'PRS Case Flow',
+            'page_stylesheet' => 'data',
+            'statusData'      => $statusData,
+            'resolutionData'  => $resolutionData,
+            'totalCases'      => $total,
+        ]);
+    }
 }

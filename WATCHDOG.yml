@@ -1,18 +1,13 @@
-advisors:
+advisors: 
   - name: default
     model: deepseek/deepseek-v4-pro
   - name: schema-guard
-    model: deepseek/deepseek-v4-pro
-    description: "Enforces FK integrity, migration idempotency, no string joins on DESE tables"
+    model: deepseek/deepseek-v4-flash
   - name: css-architect
-    model: deepseek/deepseek-v4-pro
-    description: "Enforces modular CSS architecture, no regressions to monolith, per-page loading"
+    model: deepseek/deepseek-v4-flash
   - name: security-auditor
-    model: deepseek/deepseek-v4-pro
-    description: "Enforces CSP, CSRF, SQL injection prevention, XSS hardening on every phase"
+    model: deepseek/deepseek-v4-flash
   - name: perf-watchdog
-    model: deepseek/deepseek-v4-pro
-    description: "Enforces query count limits, no N+1, cache usage, page weight budget"
+    model: deepseek/deepseek-v4-flash
   - name: deployment-guard
-    model: deepseek/deepseek-v4-pro
-    description: "Enforces .htaccess correctness, FTP-only constraint, LiteSpeed compatibility"
+    model: deepseek/deepseek-v4-flash

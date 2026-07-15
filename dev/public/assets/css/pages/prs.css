@@ -548,3 +548,19 @@
 .cal-empty { background: transparent !important; }
 .cal-legend { display: flex; align-items: center; gap: 3px; justify-content: flex-end; margin-top: 0.75rem; font-size: 0.7rem; color: var(--text-muted); }
 .cal-swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+
+/* ══════════════════════════════════════════════════════════════
+   STATUS FLOW PIPELINE
+   ══════════════════════════════════════════════════════════════ */
+.status-flow { margin: 2rem 0; }
+.flow-stage { margin-bottom: 1rem; }
+.flow-bar { height: 32px; border-radius: 4px; min-width: 5%; transition: width 1s ease; }
+.flow-info { display: flex; align-items: center; gap: 0.75rem; padding: 0.4rem 0; font-size: 0.9rem; }
+.flow-icon { font-size: 1.2rem; }
+.flow-label { font-weight: 600; color: var(--text-primary); min-width: 120px; }
+.flow-count { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.flow-pct { color: var(--text-muted); font-size: 0.8rem; }
+.resolution-grid { margin-top: 1rem; }
+.resolution-item { margin-bottom: 0.75rem; }
+.resolution-bar { height: 24px; border-radius: 4px; min-width: 3%; transition: width 1s ease; }
+.resolution-info { display: flex; gap: 1rem; padding: 0.3rem 0; font-size: 0.85rem; color: var(--text-secondary); }
