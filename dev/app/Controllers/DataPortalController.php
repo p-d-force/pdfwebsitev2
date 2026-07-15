@@ -562,18 +562,26 @@ class DataPortalController
         $n = count($rates);
         $p33 = $n > 0 ? $rates[(int)($n * 0.33)] : 0;
         $p66 = $n > 0 ? $rates[(int)($n * 0.66)] : 0;
+        $min = $rates[0] ?? 0;
+        $max = $rates[$n-1] ?? 1;
+        $range = $max - $min ?: 1;
 
         $colors = [];
         foreach ($townData as $row) {
             $rate = (float)($row['restraint_rate'] ?? 0);
             if ($rate == 0) {
                 $color = '#2a2a2a';
+                $scolor = '#2a2a2a';
             } else {
                 $color = $rate <= $p33 ? '#22c55e' : ($rate <= $p66 ? '#f59e0b' : '#ef4444');
+                $ratio = ($rate - $min) / $range;
+                $hue = round(120 * (1 - $ratio));
+                $scolor = "hsl({$hue}, 70%, 45%)";
             }
             $slug = strtolower(str_replace([' ', "'", '.'], '-', $row['town']));
             $colors[$slug] = [
                 'color' => $color,
+                'smooth' => $scolor,
                 'name' => $row['town'],
                 'rate' => $rate,
                 'restraints' => (int)($row['total_restraints'] ?? 0),

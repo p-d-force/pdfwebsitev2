@@ -1889,18 +1889,26 @@ class PrsController
         $n = count($counts);
         $p33 = $n > 0 ? $counts[(int)($n * 0.33)] : 0;
         $p66 = $n > 0 ? $counts[(int)($n * 0.66)] : 0;
+        $min = $counts[0] ?? 0;
+        $max = $counts[$n-1] ?? 1;
+        $range = $max - $min ?: 1;
 
         $colors = [];
         foreach ($townData as $row) {
             $cases = (int)($row['total_cases'] ?? 0);
             if ($cases == 0) {
                 $color = '#2a2a2a';
+                $scolor = '#2a2a2a';
             } else {
                 $color = $cases <= $p33 ? '#22c55e' : ($cases <= $p66 ? '#f59e0b' : '#ef4444');
+                $ratio = ($cases - $min) / $range;
+                $hue = round(120 * (1 - $ratio));
+                $scolor = "hsl({$hue}, 70%, 45%)";
             }
             $slug = strtolower(str_replace([' ', "'", '.'], '-', $row['town']));
             $colors[$slug] = [
                 'color' => $color,
+                'smooth' => $scolor,
                 'name' => $row['town'],
                 'cases' => $cases,
                 'open' => (int)($row['open_cases'] ?? 0),

@@ -10,7 +10,7 @@
             <thead><tr><th>Dataset</th><th>Source</th><th>Years</th><th>Key Metrics</th></tr></thead>
             <tbody>
                 <tr><td>Student Restraint</td><td>DESE SIMS/EPIMS</td><td>2016-2025</td><td>Total restraints, injuries, students restrained, enrollment</td></tr>
-                <tr><td>Student Discipline</td><td>DESE SIMS</td><td>2018-2025</td><td>Suspensions, expulsions, arrests, alternative settings</td></tr>
+                <tr><td>Student Discipline</td><td>DESE SIMS</td><td>2018-2025</td><td>Suspensions, expulsions, arrests — <em style="color:var(--warning);">single-year DESE snapshot replicated across all years; year-over-year comparison unavailable</em></td></tr>
                 <tr><td>Enrollment Demographics</td><td>DESE SIMS</td><td>2018-2025</td><td>SPED %, EL %, low income %, high needs %</td></tr>
                 <tr><td>Attendance</td><td>DESE SIMS</td><td>2018-2025</td><td>Attendance rate, chronic absenteeism, avg absences</td></tr>
                 <tr><td>SPED Outcomes</td><td>DESE SIMS</td><td>2018-2025</td><td>Grad rate, dropout rate, full inclusion %</td></tr>
