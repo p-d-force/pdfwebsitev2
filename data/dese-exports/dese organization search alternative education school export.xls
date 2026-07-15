@@ -1,0 +1,442 @@
+
+
+<html
+    xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+    <head>
+    <title>Title</title>
+    <style>
+    <!--table
+    .excelText
+        {mso-style-parent:style0;
+        mso-number-format:"\@";}
+    -->
+    </style>
+    </head>
+    <body>
+            <span id="lblSearchResults"><table>
+<tr>
+<td>Org Name</td>
+<td>Org Code</td>
+<td>Org Type</td>
+<td>Function</td>
+<td>Contact Name</td>
+<td>Address 1</td>
+<td>Address 2</td>
+<td>Town</td>
+<td>State</td>
+<td>Zip</td>
+<td>Phone</td><td>Fax</td></tr>
+<tr>
+<td>Another Course To College</td>
+<td class='excelText'>00350541</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Demitri  Curry</td>
+<td>612 Metropolitan Av</td>
+<td></td>
+<td>Hyde Park</td>
+<td>MA</td>
+<td class='excelText'>02136</td>
+<td>617-635-8865</td>
+<td>617-635-8866</td>
+    </tr>
+<tr>
+<td>Attleboro Community Academy</td>
+<td class='excelText'>00160515</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Lakeisha  Gerald</td>
+<td>1 Blue Pride Way</td>
+<td></td>
+<td>Attleboro</td>
+<td>MA</td>
+<td class='excelText'>02703</td>
+<td>508-222-5150</td>
+<td>508-223-1579</td>
+    </tr>
+<tr>
+<td>Boston Adult Tech Academy</td>
+<td class='excelText'>00350548</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Benjamin  Helfat</td>
+<td>20 Church St</td>
+<td></td>
+<td>Back Bay</td>
+<td>MA</td>
+<td class='excelText'>02116</td>
+<td>617-635-1542</td>
+<td>617-635-6362</td>
+    </tr>
+<tr>
+<td>Boston Arts Academy</td>
+<td class='excelText'>00350546</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Tyrone  Sutton</td>
+<td>174 Ipswich Street</td>
+<td></td>
+<td>Boston</td>
+<td>MA</td>
+<td class='excelText'>02215</td>
+<td>617-635-6470</td>
+<td>617-635-8854</td>
+    </tr>
+<tr>
+<td>Boston Collaborative High School</td>
+<td class='excelText'>00350755</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Sherri  Neasman</td>
+<td>215 Dorchester St</td>
+<td></td>
+<td>South Boston</td>
+<td>MA</td>
+<td class='excelText'>02127</td>
+<td>617-635-8035</td>
+<td>617-635-6821</td>
+    </tr>
+<tr>
+<td>Boston Day and Evening Academy Charter School</td>
+<td class='excelText'>04240505</td>
+<td>Charter School</td>
+<td>Principal</td>
+<td>Alison  Hramiec</td>
+<td>20 Kearsarge Ave</td>
+<td></td>
+<td>Roxbury</td>
+<td>MA</td>
+<td class='excelText'>02119</td>
+<td>617-635-6789</td>
+<td>617-635-6380</td>
+    </tr>
+<tr>
+<td>Brockton Therapeutic Day School</td>
+<td class='excelText'>00440400</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Meghann  Bottome</td>
+<td>596 Summer St</td>
+<td></td>
+<td>Brockton</td>
+<td>MA</td>
+<td class='excelText'>02302</td>
+<td>508-562-6224</td>
+<td>508-580-7081</td>
+    </tr>
+<tr>
+<td>Chelsea Opportunity Academy</td>
+<td class='excelText'>00570515</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Christopher  Bowen</td>
+<td>299 Everett Avenue</td>
+<td></td>
+<td>Chelsea</td>
+<td>MA</td>
+<td class='excelText'>02150</td>
+<td>617-466-5000</td>
+<td>617-889-8468</td>
+    </tr>
+<tr>
+<td>Chicopee Academy</td>
+<td class='excelText'>00610021</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Christopher Robert Nadeau</td>
+<td>12 DARE Way</td>
+<td></td>
+<td>Chicopee</td>
+<td>MA</td>
+<td class='excelText'>01020</td>
+<td>413-594-3449</td>
+<td>413-594-1863</td>
+    </tr>
+<tr>
+<td>Fenway High School</td>
+<td class='excelText'>00350540</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Geoffrey  Walker</td>
+<td>67 Alleghany St</td>
+<td></td>
+<td>Roxbury</td>
+<td>MA</td>
+<td class='excelText'>02120</td>
+<td>617-635-9911</td>
+<td>617-635-9204</td>
+    </tr>
+<tr>
+<td>Full Circle High School</td>
+<td class='excelText'>02740510</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Margaret E Green</td>
+<td>81 Highland Ave</td>
+<td>Full Circle</td>
+<td>Somerville</td>
+<td>MA</td>
+<td class='excelText'>02143</td>
+<td>617-629-5640</td>
+<td>617-628-6837</td>
+    </tr>
+<tr>
+<td>Gardner Academy for Learning and Technology</td>
+<td class='excelText'>01030515</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Michael  Bartkus</td>
+<td>160 Elm Street</td>
+<td></td>
+<td>Gardner</td>
+<td>MA</td>
+<td class='excelText'>01440</td>
+<td>978-632-1673</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Gateway to College</td>
+<td class='excelText'>03040515</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Michael David Rubin</td>
+<td>300 Quaker Highway</td>
+<td></td>
+<td>Uxbridge</td>
+<td>MA</td>
+<td class='excelText'>01569</td>
+<td>508-278-8633</td>
+<td>508-278-8647</td>
+    </tr>
+<tr>
+<td>Gateway to College at Springfield Technical Community College</td>
+<td class='excelText'>02810580</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Linda  Singer</td>
+<td>1 Armory Square Bldg. 19 Room 238</td>
+<td></td>
+<td>Springfield</td>
+<td>MA</td>
+<td class='excelText'>01102</td>
+<td>413-755-4480</td>
+<td>413-755-6318</td>
+    </tr>
+<tr>
+<td>Graham and Parks</td>
+<td class='excelText'>00490080</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Kathleen  Smith</td>
+<td>44 Linnaean Street</td>
+<td></td>
+<td>Cambridge</td>
+<td>MA</td>
+<td class='excelText'>02138</td>
+<td>617-349-6577</td>
+<td>617-349-6590</td>
+    </tr>
+<tr>
+<td>Keough Memorial Academy</td>
+<td class='excelText'>00250510</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Emily  Abbondanza-Luuri</td>
+<td>60 Harpin Street</td>
+<td></td>
+<td>Bellingham</td>
+<td>MA</td>
+<td class='excelText'>02019</td>
+<td>508-883-5403</td>
+<td>508-883-5408</td>
+    </tr>
+<tr>
+<td>King Open</td>
+<td class='excelText'>00490035</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Darrell  Williams</td>
+<td>850 Cambridge Street</td>
+<td></td>
+<td>Cambridge</td>
+<td>MA</td>
+<td class='excelText'>02139</td>
+<td>617-349-6540</td>
+<td>617-349-6548</td>
+    </tr>
+<tr>
+<td>Map Academy Charter School</td>
+<td class='excelText'>35170505</td>
+<td>Charter School</td>
+<td>Principal</td>
+<td>Rachel  Babcock</td>
+<td>11 Resnik Road</td>
+<td></td>
+<td>Plymouth</td>
+<td>MA</td>
+<td class='excelText'>02360</td>
+<td>508-830-9500</td>
+<td>508-425-2441</td>
+    </tr>
+<tr>
+<td>Murdock Academy for Success</td>
+<td class='excelText'>03430405</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>David  Fredette</td>
+<td>175 Grove St</td>
+<td></td>
+<td>Winchendon</td>
+<td>MA</td>
+<td class='excelText'>01475</td>
+<td>978-297-1256</td>
+<td>978-297-0509</td>
+    </tr>
+<tr>
+<td>New Mission High School</td>
+<td class='excelText'>00350542</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Kareem  Cutler</td>
+<td>655 Metropolitan Ave</td>
+<td></td>
+<td>Hyde Park</td>
+<td>MA</td>
+<td class='excelText'>02136</td>
+<td>617-635-6437</td>
+<td>617-635-6332</td>
+    </tr>
+<tr>
+<td>Next Wave Junior High</td>
+<td class='excelText'>02740410</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Margaret E Green</td>
+<td>81 Highland Ave</td>
+<td>Next Wave Junior High</td>
+<td>Somerville</td>
+<td>MA</td>
+<td class='excelText'>02143</td>
+<td>617-629-5640</td>
+<td>617-628-6837</td>
+    </tr>
+<tr>
+<td>Phoenix Academy Charter Public High School, Chelsea</td>
+<td class='excelText'>04930505</td>
+<td>Charter School</td>
+<td>Principal</td>
+<td>Josh  Zoia</td>
+<td>175 Hawthorne Street</td>
+<td></td>
+<td>Chelsea</td>
+<td>MA</td>
+<td class='excelText'>02150</td>
+<td>617-889-3100</td>
+<td>617-889-3144</td>
+    </tr>
+<tr>
+<td>Phoenix Academy Public Charter High School, Lawrence</td>
+<td class='excelText'>35180505</td>
+<td>Charter School</td>
+<td>Principal</td>
+<td>Obed  Morales</td>
+<td>15 Union Street</td>
+<td></td>
+<td>Lawrence</td>
+<td>MA</td>
+<td class='excelText'>01840</td>
+<td>978-722-8410</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Phoenix Academy Public Charter High School, Springfield</td>
+<td class='excelText'>35080505</td>
+<td>Charter School</td>
+<td>Principal</td>
+<td>Thomas  Guy</td>
+<td>65 Lincoln Street</td>
+<td></td>
+<td>Springfield</td>
+<td>MA</td>
+<td class='excelText'>01105</td>
+<td>413-273-1236</td>
+<td>423-294-2500</td>
+    </tr>
+<tr>
+<td>RISE Academy</td>
+<td class='excelText'>01490615</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Carlos  Cordero</td>
+<td>60 Allen Street</td>
+<td></td>
+<td>Lawrence</td>
+<td>MA</td>
+<td class='excelText'>01841</td>
+<td>978-975-5905</td>
+<td>978-682-9894</td>
+    </tr>
+<tr>
+<td>Resiliency Preparatory Academy</td>
+<td class='excelText'>00950525</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Stacy L Monette</td>
+<td>290 Rock Street</td>
+<td></td>
+<td>Fall River</td>
+<td>MA</td>
+<td class='excelText'>02720</td>
+<td>508-675-8230</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Taunton Alternative High School</td>
+<td class='excelText'>02930525</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Robert G Delaney</td>
+<td>120 Cohannet Street</td>
+<td></td>
+<td>Taunton</td>
+<td>MA</td>
+<td class='excelText'>02780</td>
+<td>508-844-5822</td>
+<td>774-227-7170</td>
+    </tr>
+<tr>
+<td>Waltham Valor High School</td>
+<td class='excelText'>03080515</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Linda  Flueckiger</td>
+<td>617 Lexington Street</td>
+<td></td>
+<td>Waltham</td>
+<td>MA</td>
+<td class='excelText'>02452</td>
+<td>781-314-5402</td>
+<td>781-314-5540</td>
+    </tr>
+<tr>
+<td>Young Achievers Elementary School</td>
+<td class='excelText'>00350380</td>
+<td>Public School</td>
+<td>Principal</td>
+<td>Jomila  Smith</td>
+<td>20 Outlook Road</td>
+<td></td>
+<td>Mattapan</td>
+<td>MA</td>
+<td class='excelText'>02126</td>
+<td>617-635-6804</td>
+<td>617-635-6811</td>
+    </tr>
+</table>
+
+
+</span> 
+            <span id="lblDebugText"></span>
+    </body>
+</html>

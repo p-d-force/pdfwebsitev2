@@ -1,0 +1,50 @@
+
+
+<html
+    xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+    <head>
+    <title>Title</title>
+    <style>
+    <!--table
+    .excelText
+        {mso-style-parent:style0;
+        mso-number-format:"\@";}
+    -->
+    </style>
+    </head>
+    <body>
+            <span id="lblSearchResults"><table>
+<tr>
+<td>Org Name</td>
+<td>Org Code</td>
+<td>Org Type</td>
+<td>Function</td>
+<td>Contact Name</td>
+<td>Address 1</td>
+<td>Address 2</td>
+<td>Town</td>
+<td>State</td>
+<td>Zip</td>
+<td>Phone</td><td>Fax</td></tr>
+<tr>
+<td>The Wampanoag of Mashpee</td>
+<td class='excelText'>39500000</td>
+<td>Tribal Education Agency</td>
+<td>Director (TribalEdAgency)</td>
+<td>Nitana  Greendeer</td>
+<td>483 Great Neck Road - South</td>
+<td></td>
+<td>Mashpee</td>
+<td>MA</td>
+<td class='excelText'>02649</td>
+<td>508-477-0208</td>
+<td>508-477-1218</td>
+    </tr>
+</table>
+
+
+</span> 
+            <span id="lblDebugText"></span>
+    </body>
+</html>

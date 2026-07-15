@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Parent Data Force — pages/cases.css
+   Case list filters and case detail layout.
+   ========================================================================== */
+
+/* ── Case Filters ── */
+.case-filters {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.case-filters .form-input,
+.case-filters .form-select {
+    max-width: 220px;
+}
+
+.case-filters .form-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* ── Case List ── */
+.case-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* ── Case Detail ── */
+.case-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+
+.case-detail .case-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.case-detail .case-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent-glow);
+    margin-bottom: 0.5rem;
+}
+
+.case-detail .case-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.case-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.case-meta-item {
+    font-size: 0.85rem;
+}
+
+.case-meta-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.15rem;
+}
+
+.case-meta-value {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* ── Case Body ── */
+.case-body {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.case-body h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+.case-body h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.case-body p { margin-bottom: 1.25rem; }
+.case-body ul, .case-body ol { margin-bottom: 1.25rem; }
+
+/* ── Case Document List ── */
+.case-documents {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.case-documents h3 {
+    margin-bottom: 1rem;
+}
+
+.doc-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.doc-link:hover { color: var(--accent-glow); }
+
+.doc-link:last-child { border-bottom: none; }

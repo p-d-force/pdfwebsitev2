@@ -1,0 +1,1114 @@
+
+
+<html
+    xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+    <head>
+    <title>Title</title>
+    <style>
+    <!--table
+    .excelText
+        {mso-style-parent:style0;
+        mso-number-format:"\@";}
+    -->
+    </style>
+    </head>
+    <body>
+            <span id="lblSearchResults"><table>
+<tr>
+<td>Org Name</td>
+<td>Org Code</td>
+<td>Org Type</td>
+<td>Function</td>
+<td>Contact Name</td>
+<td>Address 1</td>
+<td>Address 2</td>
+<td>Town</td>
+<td>State</td>
+<td>Zip</td>
+<td>Phone</td><td>Fax</td></tr>
+<tr>
+<td>Amego, Inc.</td>
+<td class='excelText'>50010000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>John Randall</td>
+<td>122 Grove St.</td>
+<td></td>
+<td>Franklin</td>
+<td>MA</td>
+<td class='excelText'>02038</td>
+<td>508-455-6245</td>
+<td>508-222-2624</td>
+    </tr>
+<tr>
+<td>Boston College Campus School</td>
+<td class='excelText'>50060000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Jessica Pugliesi</td>
+<td>140 Commonwealth Avenue</td>
+<td>Campion Hall 197</td>
+<td>Chestnut Hill</td>
+<td>MA</td>
+<td class='excelText'>02467</td>
+<td>617-552-3460</td>
+<td>617-552-6465</td>
+    </tr>
+<tr>
+<td>Boston Higashi School, Inc.</td>
+<td class='excelText'>50070000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Michael Kelly</td>
+<td>800 North Main Street</td>
+<td></td>
+<td>Randolph</td>
+<td>MA</td>
+<td class='excelText'>02368</td>
+<td>781-961-0800</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Branches School of the Berkshires</td>
+<td class='excelText'>51160000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Helen Bloomer</td>
+<td>10 Lyman Street</td>
+<td></td>
+<td>Pittsfield</td>
+<td>MA</td>
+<td class='excelText'>01201</td>
+<td>413-842-5300</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Brandon Residential Treatment Center</td>
+<td class='excelText'>50080000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Karen McCarthy</td>
+<td>27 Winter Street</td>
+<td></td>
+<td>Natick</td>
+<td>MA</td>
+<td class='excelText'>01760</td>
+<td>508-655-6400</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Broccoli Hall, Inc.</td>
+<td class='excelText'>50110000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Jane-Elisabeth Jakuc</td>
+<td>142 North Road</td>
+<td></td>
+<td>Sudbury</td>
+<td>MA</td>
+<td class='excelText'>01776</td>
+<td>978-369-1444</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Camp Sunshine, Inc.</td>
+<td class='excelText'>50800000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Mary Crawford</td>
+<td>1 Winch Street</td>
+<td></td>
+<td>Framingham</td>
+<td>MA</td>
+<td class='excelText'>01701</td>
+<td>508-877-1222</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Cardinal Cushing Centers, Inc.</td>
+<td class='excelText'>50130000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Meghan Campia</td>
+<td>405 Washington Street</td>
+<td></td>
+<td>Hanover</td>
+<td>MA</td>
+<td class='excelText'>02339</td>
+<td>781-826-6371</td>
+<td>781-826-1559</td>
+    </tr>
+<tr>
+<td>Center for Applied Behavioral Instruction, Inc.</td>
+<td class='excelText'>51150000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Brian Doyle</td>
+<td>345 Greenwood Street</td>
+<td></td>
+<td>Worcester</td>
+<td>MA</td>
+<td class='excelText'>01607</td>
+<td>508-363-0201</td>
+<td>508-363-1213</td>
+    </tr>
+<tr>
+<td>Children's Center for Communication</td>
+<td class='excelText'>51090000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Karen Hopkins</td>
+<td>6 Echo Avenue</td>
+<td></td>
+<td>Beverly</td>
+<td>MA</td>
+<td class='excelText'>01915</td>
+<td>978-927-7070</td>
+<td>978-927-6536</td>
+    </tr>
+<tr>
+<td>Clarke School for the Deaf</td>
+<td class='excelText'>50200000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Melanie Austin</td>
+<td>1 Whitman Rd.</td>
+<td></td>
+<td>Canton</td>
+<td>MA</td>
+<td class='excelText'>02021</td>
+<td>781-821-3499</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Clearway School, Inc.</td>
+<td class='excelText'>50210000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Tasya Clarke</td>
+<td>573B Washington St</td>
+<td></td>
+<td>Newton</td>
+<td>MA</td>
+<td class='excelText'>02458</td>
+<td>617-964-6186</td>
+<td>617-965-5680</td>
+    </tr>
+<tr>
+<td>Community Providers of Adolescent Services, Inc.</td>
+<td class='excelText'>50240000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Laura Lajewski</td>
+<td>294  Bowdoin Street</td>
+<td></td>
+<td>Dorchester</td>
+<td>MA</td>
+<td class='excelText'>02122</td>
+<td>857-220-2333</td>
+<td>617-506-8106</td>
+    </tr>
+<tr>
+<td>Community Therapeutic</td>
+<td class='excelText'>50250000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Nancy Fuller</td>
+<td>187 Spring Street</td>
+<td></td>
+<td>Lexington</td>
+<td>MA</td>
+<td class='excelText'>02421</td>
+<td>781-861-7081</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Cotting School, Inc.</td>
+<td class='excelText'>50260000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Bridget Irish</td>
+<td>453 Concord Avenue</td>
+<td></td>
+<td>Lexington</td>
+<td>MA</td>
+<td class='excelText'>02421</td>
+<td>781-862-7323</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Crossroads School, Inc.</td>
+<td class='excelText'>50270000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Kevin Hardy</td>
+<td>295 Donald Lynch Blvd.</td>
+<td></td>
+<td>Marlborough</td>
+<td>MA</td>
+<td class='excelText'>01752</td>
+<td>508-651-7500</td>
+<td>508-651-7510</td>
+    </tr>
+<tr>
+<td>Crystal Springs, Inc.</td>
+<td class='excelText'>50450000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Kathleen Lovenbury</td>
+<td>38 Narrows Road</td>
+<td></td>
+<td>Assonet</td>
+<td>MA</td>
+<td class='excelText'>02702</td>
+<td>508-644-3101</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Cutchins Programs for Children and Families, Inc.</td>
+<td class='excelText'>50280000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Tina Champagne</td>
+<td>78 Pomeroy Terrace</td>
+<td></td>
+<td>Northampton</td>
+<td>MA</td>
+<td class='excelText'>01060</td>
+<td>413-584-1310</td>
+<td>413-584-1310</td>
+    </tr>
+<tr>
+<td>Devereux Advanced Behavioral Health</td>
+<td class='excelText'>50290000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Nadyia Abbas</td>
+<td>60 Miles Road</td>
+<td></td>
+<td>Rutland</td>
+<td>MA</td>
+<td class='excelText'>01543</td>
+<td>508-886-4746</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Evergreen Center, Inc.</td>
+<td class='excelText'>50330000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Cliff Cabral</td>
+<td>345 Fortune Blvd.</td>
+<td></td>
+<td>Milford</td>
+<td>MA</td>
+<td class='excelText'>01757</td>
+<td>508-478-2631</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>F.L. Chamberlain, Inc.</td>
+<td class='excelText'>50340000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Scott Davignon</td>
+<td>1 Pleasant Street</td>
+<td></td>
+<td>Middleboro</td>
+<td>MA</td>
+<td class='excelText'>02346</td>
+<td>508-947-7825</td>
+<td>508-946-9339</td>
+    </tr>
+<tr>
+<td>Fall River Deaconess Home</td>
+<td class='excelText'>50350000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>John Golden</td>
+<td>259 Prospect Street</td>
+<td>PO Box 2118</td>
+<td>Fall River</td>
+<td>MA</td>
+<td class='excelText'>02722</td>
+<td>508-674-4847</td>
+<td>508-730-1167</td>
+    </tr>
+<tr>
+<td>Farr Academy</td>
+<td class='excelText'>50360000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Michael Culhane</td>
+<td>71 Pearl Street</td>
+<td></td>
+<td>Cambridge</td>
+<td>MA</td>
+<td class='excelText'>02139</td>
+<td>617-492-4922</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Franciscan Hospital for Children</td>
+<td class='excelText'>50370000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Patricia Mason</td>
+<td>30 Warren Street</td>
+<td></td>
+<td>Boston</td>
+<td>MA</td>
+<td class='excelText'>02135</td>
+<td>617-254-3800</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Gifford School, Inc.</td>
+<td class='excelText'>50390000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Wilson Fredian</td>
+<td>177 Boston Post Road</td>
+<td></td>
+<td>Weston</td>
+<td>MA</td>
+<td class='excelText'>02493</td>
+<td>781-899-9500</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Helix Human Services, Inc.</td>
+<td class='excelText'>50190000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Maria Williams</td>
+<td>44 Sherman Street</td>
+<td></td>
+<td>Springfield</td>
+<td>MA</td>
+<td class='excelText'>01109</td>
+<td>413-739-5626</td>
+<td>413-732-5457</td>
+    </tr>
+<tr>
+<td>Hillcrest Educational Centers, Inc.</td>
+<td class='excelText'>50420000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Shaun Cusson</td>
+<td>788 South Street</td>
+<td></td>
+<td>Pittsfield</td>
+<td>MA</td>
+<td class='excelText'>01201</td>
+<td>413-499-7924</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Home for Little Wanderers, Inc.</td>
+<td class='excelText'>50440000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Lesli Suggs</td>
+<td>10 Guest St.</td>
+<td></td>
+<td>Boston</td>
+<td>MA</td>
+<td class='excelText'>02135</td>
+<td>617-267-3700</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Hopeful Journeys Educational Center, Inc.</td>
+<td class='excelText'>51040000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Dara Pearsol</td>
+<td>28 Tozer Road</td>
+<td></td>
+<td>Beverly</td>
+<td>MA</td>
+<td class='excelText'>01915</td>
+<td>978-993-8096</td>
+<td>978-969-3021</td>
+    </tr>
+<tr>
+<td>Horace Mann Educational Association (HMEA)</td>
+<td class='excelText'>51010000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Jolene Perry</td>
+<td>8 Forge Park East</td>
+<td></td>
+<td>Franklin</td>
+<td>MA</td>
+<td class='excelText'>02038</td>
+<td>508-298-1100</td>
+<td>508-298-1400</td>
+    </tr>
+<tr>
+<td>Italian Home for Children, Inc</td>
+<td class='excelText'>50460000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Susan Keays</td>
+<td>1125 Centre Street</td>
+<td></td>
+<td>Jamaica Plain</td>
+<td>MA</td>
+<td class='excelText'>02130</td>
+<td>617-524-3116</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Judge Baker Children's Center, Inc.</td>
+<td class='excelText'>50470000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>John Kershaw</td>
+<td>53 Parker Hill Avenue</td>
+<td></td>
+<td>Boston</td>
+<td>MA</td>
+<td class='excelText'>02120</td>
+<td>617-278-4142</td>
+<td>617-232-3394</td>
+    </tr>
+<tr>
+<td>Judge Rotenberg Educational Center, Inc.</td>
+<td class='excelText'>50480000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Glenda Crookes</td>
+<td>240 Turnpike St</td>
+<td></td>
+<td>CANTON</td>
+<td>MA</td>
+<td class='excelText'>02021</td>
+<td>781-953-2805</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Justice Resource Institute, Inc. (JRI)</td>
+<td class='excelText'>50490000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Kari Beserra</td>
+<td>160 Gould Street</td>
+<td></td>
+<td>Needham</td>
+<td>MA</td>
+<td class='excelText'>02494</td>
+<td>781-559-4900</td>
+<td>781-559-4901</td>
+    </tr>
+<tr>
+<td>Landmark School, Inc.</td>
+<td class='excelText'>50530000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Josh Clark</td>
+<td>429 Hale Street</td>
+<td>P.O. Box 227</td>
+<td>Prides Crossing</td>
+<td>MA</td>
+<td class='excelText'>01965</td>
+<td>978-236-3010</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Latham Centers, Inc.</td>
+<td class='excelText'>50540000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Gerald Pouliot</td>
+<td>1646 Main Street</td>
+<td>PO Box 1879</td>
+<td>Brewster</td>
+<td>MA</td>
+<td class='excelText'>02631</td>
+<td>508-896-5776</td>
+<td>508-896-6872</td>
+    </tr>
+<tr>
+<td>League School of Autism</td>
+<td class='excelText'>50550000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Lawrence Sauer</td>
+<td>300 Boston-Providence Turnpike</td>
+<td></td>
+<td>WALPOLE</td>
+<td>MA</td>
+<td class='excelText'>02032</td>
+<td>508-850-3900</td>
+<td>508-660-2442</td>
+    </tr>
+<tr>
+<td>Lighthouse School, Inc.</td>
+<td class='excelText'>50570000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Scott Bartis</td>
+<td>25 Wellman Avenue</td>
+<td></td>
+<td>Chelmsford</td>
+<td>MA</td>
+<td class='excelText'>01863</td>
+<td>978-251-4050</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Little People's School, Inc.</td>
+<td class='excelText'>50580000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Kurt Moellering</td>
+<td>1507 Washington Street</td>
+<td></td>
+<td>Newton</td>
+<td>MA</td>
+<td class='excelText'>02465</td>
+<td>617-965-0764</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Massachusetts Association for the Blind</td>
+<td class='excelText'>50590000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Brooke Howard</td>
+<td>200 Ivy Street</td>
+<td></td>
+<td>Brookline</td>
+<td>MA</td>
+<td class='excelText'>02446</td>
+<td>617-732-0220</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Massachusetts Foundation of Learning Disabilities</td>
+<td class='excelText'>50600000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Jody Michalski</td>
+<td>533 North Road</td>
+<td></td>
+<td>Westfield</td>
+<td>MA</td>
+<td class='excelText'>01085</td>
+<td>413-562-9500</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>May Institute, Inc.</td>
+<td class='excelText'>50620000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Pam Raymond</td>
+<td>41 Pacella Park Drive</td>
+<td></td>
+<td>Randolph</td>
+<td>MA</td>
+<td class='excelText'>02368</td>
+<td>781-440-0400</td>
+<td>781-437-1301</td>
+    </tr>
+<tr>
+<td>McAuley Nazareth, Inc.</td>
+<td class='excelText'>50630000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Mindy deMedeiros</td>
+<td>77 Mulberry Street</td>
+<td></td>
+<td>Leicester</td>
+<td>MA</td>
+<td class='excelText'>01524</td>
+<td>508-892-4886</td>
+<td>508-892-9736</td>
+    </tr>
+<tr>
+<td>McLean Hospital, Inc.</td>
+<td class='excelText'>50640000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Daniel Dickstein</td>
+<td>115 Mill Street</td>
+<td></td>
+<td>Belmont</td>
+<td>MA</td>
+<td class='excelText'>02478</td>
+<td>617-855-2847</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Meeting Street Massachusetts, Inc.</td>
+<td class='excelText'>50180000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Michelle Godfrey</td>
+<td>1 Posa Place</td>
+<td>1 Posa Place</td>
+<td>Dartmouth</td>
+<td>MA</td>
+<td class='excelText'>02747</td>
+<td>508-742-6483</td>
+<td>508-996-3397</td>
+    </tr>
+<tr>
+<td>Melmark New England</td>
+<td class='excelText'>50650000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Helena Maguire</td>
+<td>461 River Road</td>
+<td></td>
+<td>Andover</td>
+<td>MA</td>
+<td class='excelText'>01810</td>
+<td>978-654-4300</td>
+<td>978-654-4315</td>
+    </tr>
+<tr>
+<td>Merrimac Heights Academy Inc.</td>
+<td class='excelText'>51140000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Lygia Soares</td>
+<td>102 West Main Street</td>
+<td></td>
+<td>Merrimac</td>
+<td>MA</td>
+<td class='excelText'>01860</td>
+<td>978-223-5258</td>
+<td>351-888-3138</td>
+    </tr>
+<tr>
+<td>Milestones, Inc.</td>
+<td class='excelText'>50890000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Kimberly Rockers</td>
+<td>410 Totten Pond Road</td>
+<td>Second Floor</td>
+<td>Waltham</td>
+<td>MA</td>
+<td class='excelText'>02451</td>
+<td>781-895-3200</td>
+<td>781-895-3226</td>
+    </tr>
+<tr>
+<td>Nashoba Learning Group Inc</td>
+<td class='excelText'>50670000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Lori Steers</td>
+<td>10 Oak Park Drive</td>
+<td></td>
+<td>Bedford</td>
+<td>MA</td>
+<td class='excelText'>01730</td>
+<td>781-275-2500</td>
+<td>781-275-2510</td>
+    </tr>
+<tr>
+<td>New England Academy, Inc.</td>
+<td class='excelText'>51030000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Ryan Plosker</td>
+<td>500 Cummings Center</td>
+<td></td>
+<td>Beverly</td>
+<td>MA</td>
+<td class='excelText'>01915</td>
+<td>978-921-1103</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>New England Adolescent Research Institute, Inc.</td>
+<td class='excelText'>50680000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Craig Latham</td>
+<td>201 East Street</td>
+<td></td>
+<td>Easthampton</td>
+<td>MA</td>
+<td class='excelText'>01027</td>
+<td>413-540-0712</td>
+<td>413-540-1915</td>
+    </tr>
+<tr>
+<td>New England Center for Children, Inc.</td>
+<td class='excelText'>50690000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Heather Morrison</td>
+<td>33 Turnpike Road</td>
+<td></td>
+<td>Southborough</td>
+<td>MA</td>
+<td class='excelText'>01772</td>
+<td>508-015-1015</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>New England Pediatric Care</td>
+<td class='excelText'>50700000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Erin Ficociello</td>
+<td>78 Boston Road </td>
+<td></td>
+<td>Billerica </td>
+<td>MA</td>
+<td class='excelText'>01862</td>
+<td>978-667-5123</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Northeast Behavioral Health, Inc.</td>
+<td class='excelText'>50410000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Ellen Pelletier</td>
+<td>20 Bowlery Drive</td>
+<td></td>
+<td>Rowley</td>
+<td>MA</td>
+<td class='excelText'>01969</td>
+<td>978-948-2346</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Partners in Child Development</td>
+<td class='excelText'>50770000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Chris Hunt</td>
+<td>32 Osgood St.</td>
+<td></td>
+<td>Andover</td>
+<td>MA</td>
+<td class='excelText'>01810</td>
+<td>978-475-9228</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Perkins School for the Blind, Inc.</td>
+<td class='excelText'>50760000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Ed Bosso</td>
+<td>175 North Beacon Street</td>
+<td></td>
+<td>Watertown</td>
+<td>MA</td>
+<td class='excelText'>02472</td>
+<td>617-972-7211</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Positive Regard Network</td>
+<td class='excelText'>51060000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Chris Duff</td>
+<td>84 Second Ave</td>
+<td></td>
+<td>Chicopee</td>
+<td>MA</td>
+<td class='excelText'>01020</td>
+<td>413-533-9500</td>
+<td>413-533-5595</td>
+    </tr>
+<tr>
+<td>RFK Community Alliance</td>
+<td class='excelText'>50300000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Dawn Bentley</td>
+<td>971 Main Street</td>
+<td></td>
+<td>Lancaster</td>
+<td>MA</td>
+<td class='excelText'>01523</td>
+<td>978-368-4565</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Realizing Children's Strengths Learning Center, Inc. (RCS)</td>
+<td class='excelText'>50990000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Denise Rizzo</td>
+<td>6 Strathmore Road</td>
+<td></td>
+<td>Natick</td>
+<td>MA</td>
+<td class='excelText'>01760</td>
+<td>508-650-5943</td>
+<td>508-650-5944</td>
+    </tr>
+<tr>
+<td>Riverside Community Care, Inc.</td>
+<td class='excelText'>51070000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Paulo Fulton</td>
+<td>25Birch St.</td>
+<td>Bldg B, Suite 250</td>
+<td>Milford</td>
+<td>MA</td>
+<td class='excelText'>01757</td>
+<td>508-422-9250</td>
+<td>508-422-9250</td>
+    </tr>
+<tr>
+<td>Riverview School, Inc.</td>
+<td class='excelText'>50810000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Stewart Miller</td>
+<td>551 Route 6A</td>
+<td></td>
+<td>E. Sandwich</td>
+<td>MA</td>
+<td class='excelText'>02537</td>
+<td>508-888-0489</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Saint Ann's Home, Inc.</td>
+<td class='excelText'>50830000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Joseph Cronin</td>
+<td>100A Haverhill Street</td>
+<td></td>
+<td>Methuen</td>
+<td>MA</td>
+<td class='excelText'>01844</td>
+<td>978-682-5276</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Schools for Children, Inc.</td>
+<td class='excelText'>50850000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Paul Stein</td>
+<td>8 Winchester Place</td>
+<td>Suite 202</td>
+<td>Winchester</td>
+<td>MA</td>
+<td class='excelText'>01890</td>
+<td>781-641-2424</td>
+<td>781-641-2713</td>
+    </tr>
+<tr>
+<td>Seven Hills Foundation</td>
+<td class='excelText'>50860000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Kathleen Jordan</td>
+<td>22 Hillside Avenue</td>
+<td></td>
+<td>Groton</td>
+<td>MA</td>
+<td class='excelText'>01450</td>
+<td>978-448-3388</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>South Shore Stars</td>
+<td class='excelText'>51180000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Renee Heywood</td>
+<td>163 Libbey Parkway</td>
+<td></td>
+<td>Weymouth</td>
+<td>MA</td>
+<td class='excelText'>02189</td>
+<td>781-331-8505</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Specialized Education Services, Inc. (SESI)</td>
+<td class='excelText'>50120000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Ian Cassidy</td>
+<td>450 Pleasant Street</td>
+<td></td>
+<td>East Bridgewater </td>
+<td>MA</td>
+<td class='excelText'>02333</td>
+<td>508-232-3005</td>
+<td>508-232-3007</td>
+    </tr>
+<tr>
+<td>Stevens Children's Home</td>
+<td class='excelText'>50880000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Ivy Medeiros</td>
+<td>24 Main Street</td>
+<td></td>
+<td>Swansea</td>
+<td>MA</td>
+<td class='excelText'>02777</td>
+<td>508-679-0183</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Summit Academy, Inc.</td>
+<td class='excelText'>51000000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Nikki Koppel</td>
+<td>15 Jamesbury Drive</td>
+<td></td>
+<td>Worcester</td>
+<td>MA</td>
+<td class='excelText'>01609</td>
+<td>508-751-8500</td>
+<td>508-751-8501</td>
+    </tr>
+<tr>
+<td>The Guild for Human Services, Inc.</td>
+<td class='excelText'>50780000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Amy Sousa</td>
+<td>521 Virginia Road</td>
+<td></td>
+<td>Concord</td>
+<td>MA</td>
+<td class='excelText'>01742</td>
+<td>781-893-6000</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>The Learning Center for the Deaf, Inc.</td>
+<td class='excelText'>50560000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Sarah Glenn-Smith</td>
+<td>848 Central Street</td>
+<td></td>
+<td>Framingham</td>
+<td>MA</td>
+<td class='excelText'>01701</td>
+<td>508-879-5110</td>
+<td>508-875-3355</td>
+    </tr>
+<tr>
+<td>Valley Educational Services, Inc.</td>
+<td class='excelText'>50910000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>John Rahilly</td>
+<td>269 Moore Street</td>
+<td></td>
+<td>Chicopee</td>
+<td>MA</td>
+<td class='excelText'>01013</td>
+<td>413-592-6069</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Walker Incorporated</td>
+<td class='excelText'>50930000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Patrick Tutwiler</td>
+<td>1968 Central Avenue</td>
+<td></td>
+<td>Needham</td>
+<td>MA</td>
+<td class='excelText'>02492</td>
+<td>781-449-4500</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Wayside Youth & Family Support Network, Inc.</td>
+<td class='excelText'>50940000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Eric Masi</td>
+<td>1 Frederick Abbott Way</td>
+<td></td>
+<td>Framingham</td>
+<td>MA</td>
+<td class='excelText'>01701</td>
+<td>508-270-1222</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Whitney Academy, Inc.</td>
+<td class='excelText'>50950000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Kevin Marques</td>
+<td>85 Doctor Braley Road </td>
+<td></td>
+<td>E. Freetown</td>
+<td>MA</td>
+<td class='excelText'>02717</td>
+<td>508-763-3737</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Willie Ross School for the Deaf, Inc.</td>
+<td class='excelText'>50960000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Robert Carter</td>
+<td>32 Norway Street</td>
+<td></td>
+<td>Longmeadow</td>
+<td>MA</td>
+<td class='excelText'>01106</td>
+<td>413-567-0374</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Willow Hill School, Inc</td>
+<td class='excelText'>50970000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Marilyn Reid</td>
+<td>98 Haynes Road</td>
+<td></td>
+<td>Sudbury</td>
+<td>MA</td>
+<td class='excelText'>01776</td>
+<td>978-443-2581</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Your Educational Success (YES)</td>
+<td class='excelText'>51170000</td>
+<td>Special Education Agency</td>
+<td>Executive Director</td>
+<td>Paula Starnes</td>
+<td>57 School Street</td>
+<td></td>
+<td>Springfield</td>
+<td>MA</td>
+<td class='excelText'>01105</td>
+<td>413-747-7004</td>
+<td>--</td>
+    </tr>
+</table>
+
+
+</span> 
+            <span id="lblDebugText"></span>
+    </body>
+</html>

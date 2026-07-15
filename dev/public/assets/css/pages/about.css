@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Parent Data Force — pages/about.css
+   About page layout.
+   ========================================================================== */
+
+.about-hero {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.about-content {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.about-content h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+.about-content p { margin-bottom: 1.25rem; }
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.about-value-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.about-value-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.about-value-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}

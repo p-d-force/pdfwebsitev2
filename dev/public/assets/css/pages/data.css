@@ -1,0 +1,622 @@
+/* ==========================================================================
+   Parent Data Force — pages/data.css
+   Data portal tabs, dataset cards, chart containers, browser views.
+   ========================================================================== */
+
+/* ── Data Browser Tabs ── */
+.data-browser-tabs {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.data-tab {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color var(--transition), border-color var(--transition);
+}
+
+.data-tab:hover { color: var(--text-secondary); }
+
+.data-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+/* ── Data Browser Intro ── */
+.data-browser-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.data-browser-intro h3 { margin-bottom: 0.5rem; }
+.data-browser-intro p {
+    color: var(--text-secondary);
+    max-width: 550px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+}
+
+/* ── Chart Containers ── */
+.restraint-charts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.restraint-chart-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+}
+
+.restraint-chart-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.restraint-info-box {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    padding: 0.75rem 1rem;
+    background: var(--bg-glass);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+}
+
+/* ── Compare Panel ── */
+.compare-districts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.compare-district-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.25rem;
+}
+
+.compare-district-card.selected {
+    border-color: var(--accent);
+    border-width: 2px;
+}
+
+.compare-results {
+    margin-top: 2rem;
+}
+
+/* ── Chart Card Grid ── */
+.chart-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.chart-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.charts-grid .chart-card { margin-bottom: 0; }
+
+.charts-grid-full {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .charts-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Heatmap Color-Coded Cells ── */
+.cell-good { background: rgba(34,197,94,0.15) !important; }
+.cell-warn { background: rgba(245,158,11,0.15) !important; }
+.cell-caution { background: rgba(255,90,31,0.15) !important; }
+.cell-bad { background: rgba(239,68,68,0.15) !important; }
+
+/* ── Heatmap Toggle Button ── */
+.heatmap-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color var(--transition), color var(--transition);
+    margin-bottom: 1rem;
+}
+
+.heatmap-toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.heatmap-toggle.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(255,90,31,0.08);
+}
+
+/* ── Sparkline ── */
+.sparkline-container {
+    margin-bottom: 1rem;
+    padding: 0.75rem 0;
+}
+
+.sparkline-container canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ── District Profile Card ── */
+.profile-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+    .profile-card { grid-template-columns: 1fr; }
+}
+
+.profile-gauge {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.profile-gauge-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.profile-gauge-bar {
+    height: 10px;
+    background: var(--bg-primary);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-gauge-fill {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+    background: var(--accent);
+}
+
+.profile-gauge-marker {
+    position: absolute;
+    top: -3px;
+    width: 4px;
+    height: 16px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: left 0.5s ease;
+}
+
+/* ── YoY Change Bars ── */
+.yoy-bar-positive {
+    background: rgba(34,197,94,0.6) !important;
+}
+
+.yoy-bar-negative {
+    background: rgba(239,68,68,0.6) !important;
+}
+
+/* ── Diverging Chart Container ── */
+.diverging-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.diverging-row {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+}
+
+.diverging-label {
+    width: 130px;
+    text-align: right;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+.diverging-bar-wrap {
+    flex: 1;
+    display: flex;
+    height: 18px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.diverging-bar-center {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: var(--text-muted);
+}
+
+.diverging-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.diverging-bar-fill.negative {
+    background: var(--danger);
+    margin-left: auto;
+}
+
+.diverging-bar-fill.positive {
+    background: var(--success);
+}
+
+.diverging-value {
+    width: 60px;
+    color: var(--text-primary);
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ── PRS Status Distribution Bars ── */
+.status-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.status-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.status-bar-label {
+    width: 130px;
+    text-align: right;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+.status-bar-track {
+    flex: 1;
+    height: 24px;
+    background: var(--bg-primary);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.status-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: width 0.5s ease;
+}
+
+.status-bar-count {
+    width: 50px;
+    font-size: 0.82rem;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+}
+
+/* ── Stat Cards ── */
+.stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1rem;
+    text-align: center;
+    border: 1px solid var(--border-soft);
+    transition: border-color var(--transition);
+}
+
+.stat-card:hover { border-color: var(--accent); }
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.2;
+}
+
+.stat-card .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+.stat-card .stat-delta {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    display: inline-block;
+}
+
+.delta-up { color: var(--success); }
+.delta-down { color: var(--danger); }
+.delta-neutral { color: var(--text-muted); }
+
+/* ── Dashboard Grid ── */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard-grid .chart-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    min-height: 360px;
+}
+
+.dashboard-grid .chart-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* ── Correlation Grid ── */
+.correlation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.correlation-grid .chart-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    min-height: 320px;
+}
+
+.correlation-grid .chart-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* ── Correlation 2×2 sub-grid ── */
+.correlation-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.correlation-subgrid .mini-chart {
+    min-height: 260px;
+}
+
+/* ── Rankings Tabs ── */
+.rankings-section {
+    margin-bottom: 2rem;
+}
+
+.rankings-tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+}
+
+.ranking-tab {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color var(--transition), border-color var(--transition);
+    white-space: nowrap;
+}
+
+.ranking-tab:hover { color: var(--text-secondary); }
+.ranking-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.ranking-panel { display: none; }
+.ranking-panel.active { display: block; }
+
+.rankings-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.ranking-list {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.ranking-list h4 {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-soft);
+    margin: 0;
+}
+
+.ranking-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ranking-list th, .ranking-list td {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+.ranking-list th {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.75rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.ranking-list .rank-num {
+    width: 2rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.ranking-list .rank-value {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* ── YoY Table ── */
+.yoy-section { margin-bottom: 2rem; }
+
+.yoy-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.yoy-movers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.mover-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+}
+
+.mover-card h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.5rem;
+}
+
+.mover-card .mover-district {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.mover-card .mover-change {
+    font-size: 0.85rem;
+}
+
+.mover-card.improved { border-left: 3px solid var(--success); }
+.mover-card.declined { border-left: 3px solid var(--danger); }
+.mover-card.improved h4 { color: var(--success); }
+.mover-card.declined h4 { color: var(--danger); }
+
+.yoy-table-wrap {
+    overflow-x: auto;
+}
+
+.yoy-table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.yoy-table-wrap th {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.75rem;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+.yoy-table-wrap td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.yoy-table-wrap .num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+    .correlation-grid { grid-template-columns: 1fr; }
+    .correlation-subgrid { grid-template-columns: 1fr; }
+    .yoy-movers { grid-template-columns: 1fr; }
+    .rankings-columns { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+    .stat-cards { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Parent Data Force — print.css
+   Print-optimized: hides nav/footer/buttons, ensures charts don't break
+   across pages, sets readable font sizes.
+   ========================================================================== */
+
+@media print {
+    /* Hide chrome */
+    .nav, footer, .nav-toggle, .nav-links,
+    .btn, button, .filter-bar, .form-select,
+    .construction-notice, .beta-banner,
+    .heatmap-toggle, .data-browser-tabs,
+    .back-link, .submit-tabs, #modeToggle,
+    .map-legend, #map-tooltip {
+        display: none !important;
+    }
+
+    /* Reset background/text for printing */
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 10pt !important;
+    }
+
+    .section {
+        padding: 1rem 0 !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+        padding: 0 0.5in !important;
+    }
+
+    /* Cards and panels */
+    .stat-card, .chart-card, .dashboard-panel, .finding-card,
+    [style*="background:var(--color-surface"],
+    [style*="background:var(--bg-elevated"] {
+        background: #fff !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+
+    .stat-value { color: #000 !important; }
+    .stat-label { color: #555 !important; }
+
+    /* Charts: prevent page breaks inside, render at full size */
+    .chart-card, canvas {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    canvas {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Tables */
+    .data-table {
+        font-size: 8pt !important;
+    }
+
+    .data-table th {
+        background: #eee !important;
+        color: #000 !important;
+    }
+
+    .data-table td, .data-table th {
+        border-color: #ccc !important;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+        color: #000 !important;
+        page-break-after: avoid !important;
+    }
+
+    h1 { font-size: 18pt !important; }
+    h2 { font-size: 14pt !important; }
+    h3 { font-size: 12pt !important; }
+
+    a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+
+    .section-tag {
+        color: #555 !important;
+        border-color: #ccc !important;
+    }
+
+    /* Timeline */
+    .timeline {
+        border-color: #ccc !important;
+    }
+
+    .timeline-dot {
+        border: 2px solid #000 !important;
+    }
+
+    .timeline-card {
+        background: #f9f9f9 !important;
+        border-color: #ddd !important;
+    }
+
+    /* Meta grid */
+    .meta-grid {
+        background: #f9f9f9 !important;
+        border-color: #ddd !important;
+    }
+
+    /* Hide interactive-only elements */
+    .map-container { display: none !important; }
+
+    /* Ensure links show URLs */
+    a[href^="/"]:after {
+        content: " (https://parentdataforce.com" attr(href) ")";
+        font-size: 7pt;
+        color: #999;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 7pt;
+        color: #999;
+    }
+}

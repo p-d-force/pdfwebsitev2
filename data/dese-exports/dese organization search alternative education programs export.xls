@@ -1,0 +1,1128 @@
+
+
+<html
+    xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+    <head>
+    <title>Title</title>
+    <style>
+    <!--table
+    .excelText
+        {mso-style-parent:style0;
+        mso-number-format:"\@";}
+    -->
+    </style>
+    </head>
+    <body>
+            <span id="lblSearchResults"><table>
+<tr>
+<td>Org Name</td>
+<td>Org Code</td>
+<td>Org Type</td>
+<td>Function</td>
+<td>Contact Name</td>
+<td>Address 1</td>
+<td>Address 2</td>
+<td>Town</td>
+<td>State</td>
+<td>Zip</td>
+<td>Phone</td><td>Fax</td></tr>
+<tr>
+<td>ABCD University High School</td>
+<td class='excelText'>00351001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Sherann  Jackson</td>
+<td>575 Warren Street</td>
+<td></td>
+<td>Boston</td>
+<td>MA</td>
+<td class='excelText'>02121</td>
+<td>617-348-6520</td>
+<td>617-348-6510</td>
+    </tr>
+<tr>
+<td>ACE</td>
+<td class='excelText'>00201004</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Jason  Conetta</td>
+<td>744 West Main Street</td>
+<td></td>
+<td>Hyannis</td>
+<td>MA</td>
+<td class='excelText'>02601</td>
+<td>508-790-6445</td>
+<td>508-790-6430</td>
+    </tr>
+<tr>
+<td>ALPHA Afternoon Program</td>
+<td class='excelText'>01811001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>1 Ranger Road</td>
+<td></td>
+<td>Methuen</td>
+<td>MA</td>
+<td class='excelText'>01844</td>
+<td>978-681-1376</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Alternative Classroom</td>
+<td class='excelText'>06151001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>1062 Pleasant Street</td>
+<td></td>
+<td>Athol</td>
+<td>MA</td>
+<td class='excelText'>01331</td>
+<td>978-249-2430</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Alternative Education Program</td>
+<td class='excelText'>01821001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Lacey  Foley</td>
+<td>71 East Grove Street</td>
+<td></td>
+<td>Middleborough</td>
+<td>MA</td>
+<td class='excelText'>02346</td>
+<td>508-946-2010</td>
+<td>508-946-2004</td>
+    </tr>
+<tr>
+<td>Alternative Learning Program</td>
+<td class='excelText'>01261002</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>204 Sisson Road</td>
+<td></td>
+<td>Harwich</td>
+<td>MA</td>
+<td class='excelText'>02645</td>
+<td>508-430-7212</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Alternative Learning Program</td>
+<td class='excelText'>06801001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>AlP Minnechaug Regional High School</td>
+<td>621 Main Street</td>
+<td>Wilbraham</td>
+<td>MA</td>
+<td class='excelText'>01095</td>
+<td>413-596-9011</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Braintree Alternative Education Program/Middle - High School</td>
+<td class='excelText'>00401002</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>128 Town Street</td>
+<td></td>
+<td>Braintree</td>
+<td>MA</td>
+<td class='excelText'>02184</td>
+<td>781-848-4000</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Braintree High Alternative High School</td>
+<td class='excelText'>00401001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>128 Town Street</td>
+<td></td>
+<td>Braintree</td>
+<td>MA</td>
+<td class='excelText'>02184</td>
+<td>781-848-4000</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Cambridge High School Extension Program</td>
+<td class='excelText'>00491001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Ryan  Souliotis</td>
+<td>359 Broadway</td>
+<td></td>
+<td>Cambridge</td>
+<td>MA</td>
+<td class='excelText'>02139</td>
+<td>617-349-6880</td>
+<td>617-349-6306</td>
+    </tr>
+<tr>
+<td>Central High School</td>
+<td class='excelText'>02071002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Dianne  Lochhead</td>
+<td>100 Walnut Street</td>
+<td></td>
+<td>Newtonville</td>
+<td>MA</td>
+<td class='excelText'>02460</td>
+<td>617-559-6016</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Challenge/Reach Academies</td>
+<td class='excelText'>03481008</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Scott  Moriarty</td>
+<td>15 Harlow Street</td>
+<td></td>
+<td>Worcester</td>
+<td>MA</td>
+<td class='excelText'>01605</td>
+<td>508-799-3084</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Coast Collaborative/Ombudsman</td>
+<td class='excelText'>02481002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Shelagh Barbara St. Laurent</td>
+<td>101 School Street</td>
+<td></td>
+<td>Revere</td>
+<td>MA</td>
+<td class='excelText'>02151</td>
+<td>781-286-8220</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Curtis Tufts Alternative School</td>
+<td class='excelText'>01761001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Laurie A Hodgdon</td>
+<td>437 Main Street</td>
+<td></td>
+<td>Medford</td>
+<td>MA</td>
+<td class='excelText'>02155</td>
+<td>781-393-2343</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Danvers High Opportunity Program</td>
+<td class='excelText'>00711001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>64 Cabot Road</td>
+<td></td>
+<td>Danvers</td>
+<td>MA</td>
+<td class='excelText'>01923</td>
+<td>978-774-6112</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Day 6</td>
+<td class='excelText'>00931002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Sara  Cimea</td>
+<td>100 Elm Street</td>
+<td></td>
+<td>Everett</td>
+<td>MA</td>
+<td class='excelText'>02149</td>
+<td>781-394-2490</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Diploma Plus Small Learning Community</td>
+<td class='excelText'>00351019</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Sung-joon  Pai</td>
+<td>240 Medford Street</td>
+<td></td>
+<td>Boston</td>
+<td>MA</td>
+<td class='excelText'>02129</td>
+<td>617-635-9914</td>
+<td>617-635-9928</td>
+    </tr>
+<tr>
+<td>Eugene Thayer Campus</td>
+<td class='excelText'>01001002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Jacob Keith Hanson</td>
+<td>50 Lawrence Street</td>
+<td></td>
+<td>Framingham</td>
+<td>MA</td>
+<td class='excelText'>01702</td>
+<td>508-626-9191</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Evening High School</td>
+<td class='excelText'>02431003</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>52 Coddington Street</td>
+<td></td>
+<td>Quincy</td>
+<td>MA</td>
+<td class='excelText'>02169</td>
+<td>617-984-6604</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Everett Alternative High School</td>
+<td class='excelText'>00931003</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Petra  Farias</td>
+<td>121 Vine Street</td>
+<td></td>
+<td>Everett</td>
+<td>MA</td>
+<td class='excelText'>02149</td>
+<td>617-394-2470</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Excel</td>
+<td class='excelText'>06251001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Nicholas Patrick Walsh</td>
+<td>415 Center Street</td>
+<td></td>
+<td>Bridgewater</td>
+<td>MA</td>
+<td class='excelText'>02324</td>
+<td>508-279-2140</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Fitchburg Alt. ED Program</td>
+<td class='excelText'>00971001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Eileen J Spinney</td>
+<td>111 Goodrich Street</td>
+<td></td>
+<td>Fitchburg</td>
+<td>MA</td>
+<td class='excelText'>01420</td>
+<td>978-345-3244</td>
+<td>978-343-6127</td>
+    </tr>
+<tr>
+<td>GOAL Program</td>
+<td class='excelText'>02741005</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Sarah S Davila</td>
+<td>8 Bonair Street</td>
+<td></td>
+<td>Somerville</td>
+<td>MA</td>
+<td class='excelText'>02143</td>
+<td>617-629-5200</td>
+<td>617-629-5661</td>
+    </tr>
+<tr>
+<td>Gateway to College</td>
+<td class='excelText'>01031002</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>444 Green Street</td>
+<td>Mount Wachusett Community College</td>
+<td>Gardner</td>
+<td>MA</td>
+<td class='excelText'>01440</td>
+<td>978-630-9249</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Gateway to College At Massasoit</td>
+<td class='excelText'>00521002</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>1 Massasoit Blvd</td>
+<td></td>
+<td>Brockton</td>
+<td>MA</td>
+<td class='excelText'>02302</td>
+<td>508-588-9100</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Gateway to College at Bunker Hill Community College</td>
+<td class='excelText'>00931001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Michael  Baldassarre</td>
+<td>70 Everett Avenue</td>
+<td></td>
+<td>Chelsea</td>
+<td>MA</td>
+<td class='excelText'>02150</td>
+<td>617-394-2400</td>
+<td>617-381-0652</td>
+    </tr>
+<tr>
+<td>Gateway to College at Holyoke Community College</td>
+<td class='excelText'>06831002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Robin  Deaton</td>
+<td>303 Homestead Avenue</td>
+<td></td>
+<td>Holyoke</td>
+<td>MA</td>
+<td class='excelText'>01040</td>
+<td>413-552-2370</td>
+<td>413-552-2745</td>
+    </tr>
+<tr>
+<td>Gateway to College at Holyoke Community College</td>
+<td class='excelText'>03321003</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Vivian  Ostrowski</td>
+<td>303 Homestead Ave</td>
+<td></td>
+<td>Holyoke</td>
+<td>MA</td>
+<td class='excelText'>01040</td>
+<td>413-552-2370</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Gateway to College at Massasoit Community College</td>
+<td class='excelText'>00441002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Christina  Alves</td>
+<td>1 Massasoit Blvd</td>
+<td></td>
+<td>Brockton</td>
+<td>MA</td>
+<td class='excelText'>02302</td>
+<td>508-588-9100</td>
+<td>508-427-1271</td>
+    </tr>
+<tr>
+<td>Gateway to College at Massasoit Community College</td>
+<td class='excelText'>01221001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Christina  Alves</td>
+<td>1 Massasoit Blvd</td>
+<td></td>
+<td>Brockton</td>
+<td>MA</td>
+<td class='excelText'>02302</td>
+<td>508-588-9100</td>
+<td>508-427-1271</td>
+    </tr>
+<tr>
+<td>Gateway to College at Massasoit Community College</td>
+<td class='excelText'>02181001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Christina  Alves</td>
+<td>1 Massasoit Blvd</td>
+<td></td>
+<td>Brockton</td>
+<td>MA</td>
+<td class='excelText'>02302</td>
+<td>508-588-9100</td>
+<td>508-427-1271</td>
+    </tr>
+<tr>
+<td>Gateway to College at Massasoit Community College</td>
+<td class='excelText'>00401003</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Christina  Alves</td>
+<td>1 Massasoit Blvd</td>
+<td></td>
+<td>Brockton</td>
+<td>MA</td>
+<td class='excelText'>02302</td>
+<td>508-588-9100</td>
+<td>508-427-1271</td>
+    </tr>
+<tr>
+<td>Gateway to College at Quinsigamond CC</td>
+<td class='excelText'>03041002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Carol S King</td>
+<td>670 West Boylston Street</td>
+<td></td>
+<td>Worcester</td>
+<td>MA</td>
+<td class='excelText'>01606</td>
+<td>508-854-7526</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Gerald Creamer Center</td>
+<td class='excelText'>03481004</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Angela  Plant</td>
+<td>120 Granite Street</td>
+<td></td>
+<td>Worcester</td>
+<td>MA</td>
+<td class='excelText'>01604</td>
+<td>508-799-3476</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Goals</td>
+<td class='excelText'>02431005</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Kristopher  Kenney</td>
+<td>12 Hunt Street</td>
+<td></td>
+<td>Quincy</td>
+<td>MA</td>
+<td class='excelText'>02171</td>
+<td>617-984-8703</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Graduation Assistance Program (GAP)</td>
+<td class='excelText'>00521001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>60 South Meadow Road</td>
+<td></td>
+<td>Carver</td>
+<td>MA</td>
+<td class='excelText'>02330</td>
+<td>508-866-6140</td>
+<td>508-866-5139</td>
+    </tr>
+<tr>
+<td>HHS Alternative Education program</td>
+<td class='excelText'>01261001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>75 Oak St.</td>
+<td></td>
+<td>Harwich</td>
+<td>MA</td>
+<td class='excelText'>02645</td>
+<td>508-430-7207</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>ICE Program at Bridgewater State University</td>
+<td class='excelText'>00831001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>131 Summer Street</td>
+<td></td>
+<td>Bridgewater</td>
+<td>MA</td>
+<td class='excelText'>02324</td>
+<td>508-324-3100</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>ICE Program at Bridgewater State University</td>
+<td class='excelText'>01221002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Mary  Price</td>
+<td>131 Summer Street</td>
+<td>Burnell Hall Room 119</td>
+<td>Bridgewater</td>
+<td>MA</td>
+<td class='excelText'>02324</td>
+<td>508-324-3100</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>ICE Program at Westfield State University</td>
+<td class='excelText'>03321002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Ryan Patrick Murray</td>
+<td>577 Western Avenue</td>
+<td></td>
+<td>Westfield</td>
+<td>MA</td>
+<td class='excelText'>01085</td>
+<td>413-572-8439</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>ICE program at Bridgewater State University</td>
+<td class='excelText'>07631001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Mary  Price</td>
+<td>131 Summer Street</td>
+<td>Burnell Hall Room 119</td>
+<td>Bridgewater</td>
+<td>MA</td>
+<td class='excelText'>02324</td>
+<td>508-324-3100</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Integrated Learning Center</td>
+<td class='excelText'>07551001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Elizabeth  Zielinski</td>
+<td>507 South Main Street</td>
+<td></td>
+<td>Orange</td>
+<td>MA</td>
+<td class='excelText'>01364</td>
+<td>978-544-2920</td>
+<td>978-544-8383</td>
+    </tr>
+<tr>
+<td>LEEP (Lynn Evening Enrichment Program)</td>
+<td class='excelText'>01631001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Maura P Durgin-Scully</td>
+<td>50 Goodridge Street</td>
+<td></td>
+<td>Lynn</td>
+<td>MA</td>
+<td class='excelText'>01902</td>
+<td>781-477-7361</td>
+<td>781-477-7365</td>
+    </tr>
+<tr>
+<td>Log On Academy</td>
+<td class='excelText'>00351020</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>105 Cummins Hwy</td>
+<td></td>
+<td>Roslindale</td>
+<td>MA</td>
+<td class='excelText'>02131</td>
+<td>617-635-8035</td>
+<td>617-635-6821</td>
+    </tr>
+<tr>
+<td>Lowell Middlesex CS</td>
+<td class='excelText'>04581001</td>
+<td>Charter Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>67 Middle St</td>
+<td></td>
+<td>Lowell</td>
+<td>MA</td>
+<td class='excelText'>01852</td>
+<td>978-656-3165</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>MAICEI at Bristol Community College</td>
+<td class='excelText'>07631002</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>777 Elsbree St.</td>
+<td></td>
+<td>Fall River</td>
+<td>MA</td>
+<td class='excelText'>02720</td>
+<td>774-357-3765</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Mansfield Evening High School</td>
+<td class='excelText'>01671001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>250 East Street</td>
+<td></td>
+<td>Mansfield</td>
+<td>MA</td>
+<td class='excelText'>02048</td>
+<td>508-261-7540</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Marlborough Alternative High School</td>
+<td class='excelText'>01701001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Sarah  Casey</td>
+<td>85 Sawin Avenue</td>
+<td></td>
+<td>Marlborough</td>
+<td>MA</td>
+<td class='excelText'>01752</td>
+<td>508-460-3505</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Mashpee High School PM Program</td>
+<td class='excelText'>01721001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Michael  Looney</td>
+<td>500 Old Barnstable Road</td>
+<td></td>
+<td>Mashpee</td>
+<td>MA</td>
+<td class='excelText'>02649</td>
+<td>508-539-3600</td>
+<td>508-539-3607</td>
+    </tr>
+<tr>
+<td>Middle School Alternative Program</td>
+<td class='excelText'>03361001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>111 Middle Street</td>
+<td></td>
+<td>Weymouth</td>
+<td>MA</td>
+<td class='excelText'>02189</td>
+<td>781-335-1460</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Monomoy Regional School District Alternative Education Program</td>
+<td class='excelText'>07121001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>George  Sowpel</td>
+<td>75 Oak Street</td>
+<td></td>
+<td>Harwich</td>
+<td>MA</td>
+<td class='excelText'>02645</td>
+<td>508-430-7200</td>
+<td>508-430-7223</td>
+    </tr>
+<tr>
+<td>NHS Alternative Program</td>
+<td class='excelText'>01971001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>10 Surfside Rd.</td>
+<td></td>
+<td>Nantucket</td>
+<td>MA</td>
+<td class='excelText'>02554</td>
+<td>508-228-7285</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Natick High School Alternative Education Center</td>
+<td class='excelText'>01981001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>15 West St.</td>
+<td></td>
+<td>Natick</td>
+<td>MA</td>
+<td class='excelText'>01760</td>
+<td>508-647-6606</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>New Citizens Center</td>
+<td class='excelText'>03481006</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Erin  Goldstein</td>
+<td>1407A Main Street</td>
+<td></td>
+<td>Worcester</td>
+<td>MA</td>
+<td class='excelText'>01603</td>
+<td>508-799-3494</td>
+<td>508-799-3222</td>
+    </tr>
+<tr>
+<td>New England Business Associates</td>
+<td class='excelText'>02271001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>66 Industry Avenue</td>
+<td></td>
+<td>Springfield</td>
+<td>MA</td>
+<td class='excelText'>01104</td>
+<td>413-821-9200</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Newcomers Academy</td>
+<td class='excelText'>00351017</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Thomas  King</td>
+<td>100 Maxwell Street</td>
+<td></td>
+<td>Dorchester</td>
+<td>MA</td>
+<td class='excelText'>02124</td>
+<td>617-635-7993</td>
+<td>617-635-7990</td>
+    </tr>
+<tr>
+<td>OA - Gateway</td>
+<td class='excelText'>01371006</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Phelipe  Johnson</td>
+<td>57 Suffolk Street</td>
+<td></td>
+<td>Holyoke</td>
+<td>MA</td>
+<td class='excelText'>01040</td>
+<td>413-552-2916</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>OA - HPS Success Center</td>
+<td class='excelText'>01371007</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Phelipe  Johnson</td>
+<td>57 Suffolk Street</td>
+<td></td>
+<td>Holyoke</td>
+<td>MA</td>
+<td class='excelText'>01040</td>
+<td>413-552-2916</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>OA - Lighthouse</td>
+<td class='excelText'>01371008</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Phelipe  Johnson</td>
+<td>57 Suffolk Street</td>
+<td></td>
+<td>Holyoke</td>
+<td>MA</td>
+<td class='excelText'>01040</td>
+<td>413-552-2916</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Parenting Teen Program</td>
+<td class='excelText'>02011001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Wendy L Andrade</td>
+<td>181 Hillman Street</td>
+<td>c/o Building 3 Room 219</td>
+<td>New Bedford</td>
+<td>MA</td>
+<td class='excelText'>02740</td>
+<td>508-997-4511</td>
+<td>508-979-8970</td>
+    </tr>
+<tr>
+<td>Pearsonalized Learning Pathways</td>
+<td class='excelText'>02481004</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Shelagh Barbara St. Laurent</td>
+<td>101 School Street</td>
+<td></td>
+<td>Revere</td>
+<td>MA</td>
+<td class='excelText'>02151</td>
+<td>781-286-8220</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Plymouth Harbor Academy</td>
+<td class='excelText'>02391001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>James Michael Demers</td>
+<td>11 Lincoln Street</td>
+<td></td>
+<td>Plymouth</td>
+<td>MA</td>
+<td class='excelText'>02360</td>
+<td>508-224-5087</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Positive Options Program</td>
+<td class='excelText'>02361005</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>269 First Street</td>
+<td></td>
+<td>Pittsfield</td>
+<td>MA</td>
+<td class='excelText'>01201</td>
+<td>413-499-9515</td>
+<td>413-499-9559</td>
+    </tr>
+<tr>
+<td>Project Access</td>
+<td class='excelText'>06601001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>100 Cable Road</td>
+<td></td>
+<td>North Eastham</td>
+<td>MA</td>
+<td class='excelText'>02651</td>
+<td>508-255-1505</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Project Excel</td>
+<td class='excelText'>00201002</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>744 West Main Street</td>
+<td></td>
+<td>Hyannis</td>
+<td>MA</td>
+<td class='excelText'>02601</td>
+<td>508-790-9870</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Project Support</td>
+<td class='excelText'>01031001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>200 Catherine Street</td>
+<td></td>
+<td>Gardner</td>
+<td>MA</td>
+<td class='excelText'>01440</td>
+<td>978-632-1600</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Randolph Alternative Program</td>
+<td class='excelText'>02441001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Thea R Stovell</td>
+<td>70 Memorial Pkwy</td>
+<td></td>
+<td>Randolph</td>
+<td>MA</td>
+<td class='excelText'></td>
+<td>--</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Resiliency For Life at Framingham High School</td>
+<td class='excelText'>01001001</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>115 A Street</td>
+<td></td>
+<td>Framingham</td>
+<td>MA</td>
+<td class='excelText'>01701</td>
+<td>508-620-4963</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Somerville High School Extended Diploma Program</td>
+<td class='excelText'>02741003</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Joel  Blackmer</td>
+<td>8 Bonair Street</td>
+<td></td>
+<td>Somerville</td>
+<td>MA</td>
+<td class='excelText'>02143</td>
+<td>781-572-9002</td>
+<td>617-629-5661</td>
+    </tr>
+<tr>
+<td>St. Mary's Alternative School</td>
+<td class='excelText'>00351014</td>
+<td>Public Alternative Ed Program</td>
+<td></td>
+<td>  </td>
+<td>515 Hyde Park Av</td>
+<td></td>
+<td>Roslindale</td>
+<td>MA</td>
+<td class='excelText'>02131</td>
+<td>617-436-8600</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Stoughton Academy</td>
+<td class='excelText'>02851001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Tara  Montembault</td>
+<td>31 Pierce Street</td>
+<td></td>
+<td>Stoughton</td>
+<td>MA</td>
+<td class='excelText'>02072</td>
+<td>781-934-4000</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Summit Academy</td>
+<td class='excelText'>06051001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Diane  Chamberlain</td>
+<td>21 Matoon Street</td>
+<td></td>
+<td>Amherst</td>
+<td>MA</td>
+<td class='excelText'>01002</td>
+<td>413-362-1729</td>
+<td>413-549-9529</td>
+    </tr>
+<tr>
+<td>The B.R.I.D.G.E. Program</td>
+<td class='excelText'>01601004</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Brian  Twomey</td>
+<td>73 Woburn Street</td>
+<td></td>
+<td>Lowell</td>
+<td>MA</td>
+<td class='excelText'>01852</td>
+<td>978-453-1115</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>The Engagement Center</td>
+<td class='excelText'>01601007</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Megan  O'Loughlin</td>
+<td>125 Smith Street</td>
+<td></td>
+<td>Lowell</td>
+<td>MA</td>
+<td class='excelText'>01851</td>
+<td>978-674-2309</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Wareham Cooperative Junior/Senior High School</td>
+<td class='excelText'>03101001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Bethany  Chandler</td>
+<td>4 Viking Drive</td>
+<td></td>
+<td>Wareham</td>
+<td>MA</td>
+<td class='excelText'>02571</td>
+<td>508-291-3500</td>
+<td>508-291-3594</td>
+    </tr>
+<tr>
+<td>West Springfield Alternative School</td>
+<td class='excelText'>03321001</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Judith  Ferri</td>
+<td>425 Piper Road</td>
+<td></td>
+<td>West Springfield</td>
+<td>MA</td>
+<td class='excelText'>01089</td>
+<td>413-263-3380</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>Weymouth Evening High School</td>
+<td class='excelText'>03361002</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Thomas  Sheehan</td>
+<td>1 Wildcat Way</td>
+<td></td>
+<td>Weymouth</td>
+<td>MA</td>
+<td class='excelText'>02190</td>
+<td>781-331-7680</td>
+<td>--</td>
+    </tr>
+<tr>
+<td>William J. Ostiguy High School</td>
+<td class='excelText'>00351015</td>
+<td>Public Alternative Ed Program</td>
+<td>Director (Alt Ed)</td>
+<td>Tia  Lites</td>
+<td>19 Temple Place</td>
+<td></td>
+<td>Boston</td>
+<td>MA</td>
+<td class='excelText'>2111</td>
+<td>617-348-6070</td>
+<td>--</td>
+    </tr>
+</table>
+
+
+</span> 
+            <span id="lblDebugText"></span>
+    </body>
+</html>

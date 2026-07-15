@@ -1,0 +1,262 @@
+/* ==========================================================================
+   Parent Data Force — global.css
+   Brand tokens, CSS reset, typography, layout shell.
+   Dark theme only. Loaded on every page.
+   ========================================================================== */
+
+/* ── Brand Tokens ── */
+:root {
+    --bg-primary:    #0b0b0b;
+    --bg-secondary:  #161616;
+    --bg-elevated:   #1d1d1d;
+    --bg-glass:      rgba(255,255,255,0.04);
+    --accent:        #ff5a1f;
+    --accent-hot:    #ff3b1f;
+    --accent-glow:   #ffa366;
+    --text-primary:  #f5f5f5;
+    --text-secondary:#a0a0a0;
+    --text-muted:    #767676;
+    --border:        #2a2a2a;
+    --border-soft:   #232323;
+    --success:       #22c55e;
+    --warning:       #f59e0b;
+    --danger:        #ef4444;
+    --radius-sm:     10px;
+    --radius-md:     14px;
+    --radius-lg:     20px;
+    --shadow-soft:   0 8px 26px rgba(0,0,0,0.25);
+    --shadow-strong: 0 20px 50px rgba(0,0,0,0.45);
+    --glow:          0 0 36px rgba(255,90,31,0.2);
+    --container:     1200px;
+    --nav-height:    72px;
+    --transition:    260ms ease;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--text-primary);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+a {
+    color: var(--accent-glow);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover { color: var(--accent); }
+
+p { margin-bottom: 1rem; }
+p:last-child { margin-bottom: 0; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+code, pre {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+pre {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: 0.875rem;
+}
+
+code {
+    font-size: 0.9em;
+    padding: 0.15em 0.35em;
+    background: var(--bg-elevated);
+    border-radius: 4px;
+}
+
+ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+li { margin-bottom: 0.35rem; }
+
+blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    color: var(--text-secondary);
+    background: var(--bg-glass);
+}
+
+/* ── Layout Shell ── */
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+main {
+    min-height: calc(100vh - var(--nav-height) - 200px);
+    padding-top: var(--nav-height);
+}
+
+/* ── Section Base ── */
+.section {
+    padding: 5rem 0;
+}
+
+.section-dark {
+    background: var(--bg-secondary);
+}
+
+.section-accent {
+    background: linear-gradient(135deg, rgba(255,90,31,0.08), rgba(255,90,31,0.02));
+    border-top: 1px solid rgba(255,90,31,0.1);
+    border-bottom: 1px solid rgba(255,90,31,0.1);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.section-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    background: rgba(255,90,31,0.1);
+    border-radius: 20px;
+}
+
+.section-title {
+    margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* ── Utility: reveal animation ── */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Beta / Construction Banners ── */
+.construction-notice {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    color: var(--accent-glow);
+    background: rgba(255,90,31,0.08);
+    border-bottom: 1px solid rgba(255,90,31,0.15);
+}
+
+.beta-banner {
+    text-align: center;
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: rgba(255,255,255,0.03);
+    border-bottom: 1px solid var(--border);
+}
+
+/* ── Empty State ── */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+}
+
+.empty-state h3 { margin-bottom: 0.5rem; color: var(--text-secondary); }
+
+/* ── Article / Content Body ── */
+.article-body {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.article-body h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+.article-body h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.article-body p { margin-bottom: 1.25rem; }
+.article-body ul, .article-body ol { margin-bottom: 1.25rem; }
+.article-body blockquote { margin: 1.5rem 0; }
+.article-body img {
+    border-radius: var(--radius-md);
+    margin: 1.5rem 0;
+}
+
+/* ── Search Highlight ── */
+.search-highlight {
+    background: rgba(255,90,31,0.25);
+    padding: 0.05em 0.15em;
+    border-radius: 3px;
+}
+
+/* ── Screen Reader Only ── */
+.sr-only {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* ── High Contrast Mode ── */
+@media (prefers-contrast: high) {
+    :root {
+        --bg-primary: #000;
+        --bg-secondary: #111;
+        --bg-elevated: #1a1a1a;
+        --text-primary: #fff;
+        --text-secondary: #ccc;
+        --border: #555;
+        --accent: #ff6b3d;
+    }
+    canvas {
+        filter: contrast(1.5) brightness(1.1);
+    }
+    .county-shape, .town-shape {
+        stroke: #fff !important;
+        stroke-width: 1.5 !important;
+    }
+    .data-table td, .data-table th {
+        border-color: #555 !important;
+    }
+}

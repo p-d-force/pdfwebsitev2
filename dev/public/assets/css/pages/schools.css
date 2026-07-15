@@ -1,0 +1,844 @@
+/* ==========================================================================
+   Parent Data Force — pages/schools.css
+   School list cards, detail stat cards, breadcrumb, filter bar.
+   ========================================================================== */
+
+/* ── Filter Bar ── */
+.school-filter-bar {
+    margin-bottom: 2.5rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 140px;
+}
+
+.filter-group label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.filter-group select {
+    padding: 0.45rem 0.75rem;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(255, 90, 31, 0.15);
+}
+
+.filter-group .order-toggle {
+    min-width: 110px;
+}
+
+.filter-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+/* ── School Grid Cards ── */
+.school-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.school-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    text-decoration: none;
+    border: 1px solid var(--border);
+}
+
+.school-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.school-card-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.school-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.school-card-district {
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.school-card-detail {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.school-card-stats {
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+}
+
+.school-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.school-stat-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+}
+
+.school-stat-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ── Badge ── */
+.badge-school-type {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: rgba(255, 90, 31, 0.12);
+    color: var(--accent);
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+    margin-bottom: 2rem;
+}
+
+.breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.825rem;
+    color: var(--text-muted);
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.5rem;
+    color: var(--border);
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--accent);
+}
+
+.breadcrumb li[aria-current="page"] {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* ── School Hero ── */
+.school-hero {
+    margin-bottom: 2rem;
+}
+
+.school-hero-name {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.school-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.school-hero-code,
+.school-hero-town,
+.school-hero-grade {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.school-district-link {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.school-district-link a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.school-district-link a:hover {
+    text-decoration: underline;
+}
+
+/* ── Stat Cards Row ── */
+.school-stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-card-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.2;
+}
+
+.stat-card-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.35rem;
+}
+
+.stat-card-year {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+}
+
+/* ── Chart Panel ── */
+.school-chart-panel {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.school-chart-panel h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.school-chart {
+    position: relative;
+    width: 100%;
+    max-height: 380px;
+}
+
+.school-chart canvas {
+    max-height: 360px;
+}
+
+/* ── District Comparison ── */
+.school-comparison {
+    padding: 1rem 1.25rem;
+    background: rgba(255, 90, 31, 0.06);
+    border: 1px solid rgba(255, 90, 31, 0.2);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.school-comparison p {
+    font-size: 0.925rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.school-comparison strong {
+    color: var(--accent);
+}
+
+.school-comparison a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+/* ── Demographics Panel ── */
+.school-demographics {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.school-demographics h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.school-demographics-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.demographics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.demographic-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.75rem;
+    background: var(--bg-elevated);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.demographic-value {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+}
+
+.demographic-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+    line-height: 1.3;
+}
+
+
+/* ═══════════════════════════════════════════════
+   Compare Page
+   ═══════════════════════════════════════════════ */
+
+.compare-selector {
+    margin-bottom: 2rem;
+}
+
+.compare-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.compare-search {
+    position: relative;
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+}
+
+.compare-search-input {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    background: var(--bg-elevated, #141414);
+    border: 1px solid var(--border, #2a2a2a);
+    border-radius: 6px;
+    color: var(--text-primary, #e0e0e0);
+    font-family: Inter, sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.compare-search-input:focus {
+    outline: none;
+    border-color: var(--accent, #ff5a1f);
+}
+
+.compare-search-results {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-elevated, #1d1d1d);
+    border: 1px solid var(--border, #2a2a2a);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 50;
+}
+
+.compare-search-item {
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    color: var(--text-primary, #e0e0e0);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border-subtle, #1a1a1a);
+    transition: background 0.15s;
+}
+
+.compare-search-item:hover {
+    background: rgba(255, 90, 31, 0.12);
+}
+
+.compare-search-item.already-selected {
+    color: var(--text-muted, #767676);
+    cursor: default;
+}
+
+.compare-search-item.already-selected span {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.compare-search-empty {
+    padding: 0.8rem 1rem;
+    color: var(--text-muted, #767676);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.compare-selected {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.compare-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.7rem;
+    background: rgba(255, 90, 31, 0.15);
+    border: 1px solid rgba(255, 90, 31, 0.3);
+    border-radius: 20px;
+    color: var(--accent, #ff5a1f);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.compare-chip-remove {
+    background: none;
+    border: none;
+    color: var(--accent, #ff5a1f);
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0;
+    opacity: 0.7;
+}
+
+.compare-chip-remove:hover {
+    opacity: 1;
+}
+
+/* Best Performer Summary */
+.compare-best {
+    margin-bottom: 2rem;
+}
+
+.compare-best h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary, #e0e0e0);
+    margin-bottom: 1rem;
+}
+
+.compare-best-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.compare-best-card {
+    background: var(--bg-elevated, #141414);
+    border: 1px solid var(--border, #2a2a2a);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.compare-best-label {
+    font-size: 0.75rem;
+    color: var(--text-muted, #767676);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.compare-best-value {
+    font-size: 0.95rem;
+    color: var(--accent, #ff5a1f);
+    font-weight: 600;
+}
+
+.compare-best-stat {
+    font-size: 0.82rem;
+    color: var(--text-secondary, #a0a0a0);
+}
+
+/* Radar Chart */
+.radar-chart-container {
+    margin-bottom: 2rem;
+}
+
+.radar-chart-container canvas {
+    max-height: 420px;
+}
+
+/* Comparison Table */
+.compare-table-wrapper {
+    margin-top: 2rem;
+}
+
+.compare-table-wrapper h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary, #e0e0e0);
+    margin-bottom: 1rem;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.compare-table th,
+.compare-table td {
+    padding: 0.6rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border, #2a2a2a);
+}
+
+.compare-table thead th {
+    color: var(--text-secondary, #a0a0a0);
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.compare-col-header a {
+    color: var(--accent, #ff5a1f);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.compare-col-header a:hover {
+    text-decoration: underline;
+}
+
+.compare-table tbody td {
+    color: var(--text-primary, #e0e0e0);
+}
+
+.compare-rate {
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent, #ff5a1f) !important;
+}
+
+/* ═══════════════════════════════════════════════
+   Rankings Page
+   ═══════════════════════════════════════════════ */
+
+.ranking-filter-bar {
+    margin-bottom: 1.5rem;
+}
+
+.ranking-table-wrapper {
+    margin-bottom: 2rem;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.ranking-table th {
+    padding: 0.7rem 0.8rem;
+    text-align: left;
+    color: var(--text-muted, #767676);
+    font-weight: 500;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--border, #2a2a2a);
+    white-space: nowrap;
+}
+
+.ranking-table th.num {
+    text-align: right;
+}
+
+.ranking-table td {
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--border-subtle, #1a1a1a);
+    color: var(--text-primary, #e0e0e0);
+}
+
+.ranking-table td.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.ranking-table tbody tr:hover {
+    background: rgba(255, 90, 31, 0.04);
+}
+
+.col-rank {
+    width: 48px;
+    color: var(--text-muted, #767676) !important;
+    font-size: 0.82rem;
+}
+
+.col-school a {
+    color: var(--text-primary, #e0e0e0);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.col-school a:hover {
+    color: var(--accent, #ff5a1f);
+}
+
+.col-district a {
+    color: var(--text-secondary, #a0a0a0);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.col-district a:hover {
+    color: var(--accent, #ff5a1f);
+}
+
+.ranking-grade {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.1rem 0.4rem;
+    background: rgba(96, 165, 250, 0.12);
+    border-radius: 3px;
+    font-size: 0.72rem;
+    color: var(--text-muted, #767676);
+    font-weight: 400;
+}
+
+.th-unit {
+    display: block;
+    font-size: 0.65rem;
+    text-transform: none;
+    font-weight: 400;
+    color: var(--text-muted, #767676);
+    letter-spacing: 0;
+}
+
+.rate-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+}
+
+.rate-badge.rate-low {
+    background: rgba(34, 197, 94, 0.12);
+    color: #22c55e;
+}
+
+.rate-badge.rate-medium {
+    background: rgba(245, 158, 11, 0.12);
+    color: #f59e0b;
+}
+
+.rate-badge.rate-high {
+    background: rgba(239, 68, 68, 0.12);
+    color: #ef4444;
+}
+
+/* ═══════════════════════════════════════════════
+   Equity Page
+   ═══════════════════════════════════════════════ */
+
+.equity-state-ref {
+    margin-bottom: 2rem;
+}
+
+.equity-state-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.equity-state-grid .stat-card {
+    text-align: center;
+}
+
+.equity-chart-panel {
+    margin-bottom: 2.5rem;
+}
+
+.chart-note {
+    font-size: 0.82rem;
+    color: var(--text-muted, #767676);
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.equity-chart-panel h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary, #e0e0e0);
+    margin-bottom: 0.5rem;
+}
+
+/* ═══════════════════════════════════════════════
+   Trends Page
+   ═══════════════════════════════════════════════ */
+
+.trend-selector {
+    margin-bottom: 2rem;
+}
+
+.trend-form {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.trend-school-select {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    background: var(--bg-elevated, #141414);
+    border: 1px solid var(--border, #2a2a2a);
+    border-radius: 6px;
+    color: var(--text-primary, #e0e0e0);
+    font-family: Inter, sans-serif;
+    font-size: 0.95rem;
+}
+
+.trend-school-select:focus {
+    outline: none;
+    border-color: var(--accent, #ff5a1f);
+}
+
+.trend-chart-panel {
+    margin-bottom: 2rem;
+}
+
+.trend-chart-panel h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary, #e0e0e0);
+    margin-bottom: 0.3rem;
+}
+
+.trend-chart-panel .chart-note {
+    margin-bottom: 1rem;
+}
+
+/* ═══════════════════════════════════════════════
+   Detail Page — State Comparison
+   ═══════════════════════════════════════════════ */
+
+.school-state-comparison {
+    margin-top: 0.5rem;
+}
+
+/* ═══════════════════════════════════════════════
+   Responsive Additions
+   ═══════════════════════════════════════════════ */
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .school-hero-name {
+        font-size: 1.6rem;
+    }
+
+    .school-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .school-stat-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .demographics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-row {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        min-width: 100%;
+    }
+}

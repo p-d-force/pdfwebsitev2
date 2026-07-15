@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Parent Data Force — elements/buttons.css
+   The orange glow is THE brand signature. All primary CTAs use this.
+   ========================================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    border: none;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Primary — orange glow */
+.btn-primary {
+    background: linear-gradient(120deg, var(--accent-hot), var(--accent));
+    box-shadow: 0 6px 20px rgba(255,90,31,0.3);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 8px 28px rgba(255,90,31,0.45);
+    color: #fff;
+}
+
+/* Secondary — orange outline */
+.btn-secondary {
+    background: rgba(255,90,31,0.14);
+    border: 1px solid rgba(255,90,31,0.4);
+    color: var(--accent-glow);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,90,31,0.22);
+    color: var(--accent-glow);
+}
+
+/* Ghost — subtle border */
+.btn-ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
+.btn-ghost:hover {
+    border-color: var(--text-muted);
+    color: var(--text-primary);
+}
+
+/* Tip — soft orange tint */
+.btn-tip {
+    background: linear-gradient(120deg, rgba(255,90,31,0.2), rgba(255,90,31,0.1));
+    border: 1px solid rgba(255,90,31,0.3);
+    color: var(--accent-glow);
+}
+
+.btn-tip:hover {
+    background: linear-gradient(120deg, rgba(255,90,31,0.28), rgba(255,90,31,0.16));
+    color: var(--accent-glow);
+}
+
+/* Danger */
+.btn-danger {
+    background: rgba(239,68,68,0.15);
+    border: 1px solid rgba(239,68,68,0.4);
+    color: var(--danger);
+}
+
+.btn-danger:hover {
+    background: rgba(239,68,68,0.25);
+}
+
+/* Small */
+.btn-sm {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+}
+
+/* Icon inside button */
+.btn-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}

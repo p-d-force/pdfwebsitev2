@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Parent Data Force — elements/cards.css
+   .resource-card is the base. .article-card and .case-card extend it.
+   ========================================================================== */
+
+/* ── Resource / Link Card ── */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.resource-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.resource-card:hover {
+    border-color: rgba(255,90,31,0.3);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.resource-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.resource-excerpt {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+}
+
+.resource-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-glow);
+    transition: color var(--transition);
+}
+
+.resource-link:hover { color: var(--accent); }
+
+/* ── Article Card ── */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+}
+
+.article-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: border-color var(--transition), transform var(--transition);
+}
+
+.article-card:hover {
+    border-color: rgba(255,90,31,0.25);
+    transform: translateY(-2px);
+}
+
+.article-card-body {
+    padding: 1.5rem;
+}
+
+.article-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+}
+
+.article-category {
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.article-date {
+    color: var(--text-muted);
+}
+
+.article-card-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-card-title a {
+    color: var(--text-primary);
+}
+
+.article-card-title a:hover { color: var(--accent-glow); }
+
+.article-card-excerpt {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.article-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.article-read-time {
+    color: var(--text-muted);
+}
+
+/* ── Case Card ── */
+.case-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    padding: 1.25rem 1.5rem;
+    transition: border-left-color var(--transition), transform var(--transition);
+}
+
+.case-card:hover {
+    border-left-color: var(--accent-glow);
+    transform: translateX(2px);
+}
+
+.case-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.case-card-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--accent-glow);
+    font-weight: 500;
+}
+
+.case-card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+}
+
+.case-card-title a {
+    color: var(--text-primary);
+}
+
+.case-card-title a:hover { color: var(--accent-glow); }
+
+.case-card-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.case-card-summary {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}

@@ -1,0 +1,65 @@
+# Parent Data Force — Production .htaccess
+# LiteSpeed / Apache 2.4+
+DirectoryIndex index.php
+
+RewriteEngine On
+
+# Canonical www redirect
+RewriteCond %{HTTP_HOST} ^parentdataforce\.com [NC]
+RewriteRule ^(.*)$ https://www.parentdataforce.com/$1 [R=301,L]
+
+# Static assets — serve directly if file exists
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^assets/ - [L]
+
+# Front controller — everything else to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# ── SECURITY ──
+Options -Indexes
+
+<FilesMatch "\.(env|sql|log|md|lock)$">
+    Require all denied
+</FilesMatch>
+
+# Block direct access to PHP files in subdirectories (only index.php is public)
+RewriteRule ^(app|backend|scripts|vendor)/ - [F,L]
+
+# ── SECURITY HEADERS ──
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always unset X-Powered-By
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.youtube.com; connect-src 'self';"
+</IfModule>
+
+# ── CORS (API only) ──
+<IfModule mod_headers.c>
+    <FilesMatch "^api/">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# ── COMPRESSION ──
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
+</IfModule>
+
+# ── CACHING ──
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType text/css "access plus 1 hour"
+    ExpiresByType text/javascript "access plus 1 hour"
+    ExpiresByType application/javascript "access plus 1 hour"
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+

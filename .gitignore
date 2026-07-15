@@ -1,0 +1,20 @@
+# Database
+mariadb-data/
+mariadb-portable/
+mariadb.zip
+projectspdf-websitemariadb.zip
+
+# Environment
+dev/.env
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.log
+*.tmp

@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Parent Data Force — pages/home.css
+   Hero, stats, featured articles grid, data glance, updates ticker, CTA.
+   ========================================================================== */
+
+/* ── Hero ── */
+.hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem 1.5rem;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 60% 50% at 50% 40%, rgba(255,90,31,0.06), transparent),
+        radial-gradient(ellipse 80% 60% at 80% 20%, rgba(255,90,31,0.04), transparent);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, var(--bg-primary));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-tagline {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+}
+
+.hero-title-line { display: block; }
+.hero-title-accent {
+    display: block;
+    background: linear-gradient(120deg, var(--accent), var(--accent-glow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stat {
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.stat-value {
+    display: block;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 640px) {
+    .hero-title { font-size: 2.25rem; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── CTA Bottom Banner ── */
+.cta-banner {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.cta-banner .section-title { margin-bottom: 0.5rem; }
+.cta-banner .section-subtitle { max-width: 100%; margin-bottom: 1.5rem; }
+
+/* ── Updates Ticker ── */
+.updates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.update-item {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.25rem;
+    transition: border-color var(--transition);
+}
+
+.update-item:hover { border-color: rgba(255,90,31,0.2); }
+
+.update-item-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.35rem;
+    flex-wrap: wrap;
+}
+
+.update-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.update-case-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--accent-glow);
+    text-decoration: none;
+}
+
+.update-case-link:hover { color: var(--accent); }
+
+.update-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.update-body {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
